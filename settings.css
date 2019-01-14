@@ -1,0 +1,338 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: whitesmoke;
+    max-width: 100vw;
+}
+
+.white-bg {
+	background-color: whitesmoke;
+	max-width: 100vw;
+}
+
+nav {
+	max-width: 100vw;
+    box-shadow: 0 0 10px lightgray;
+    font-size: 0.5cm;
+    font-family: 'kollektif';
+    background-color: lightgrey;
+}
+
+.home{
+	background-image: url('assets/home-bg.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.welcome{
+	font-size: 10vh;
+	text-align: center;
+	font-family: 'kollektif';
+	opacity: 1;
+	animation-name: fadeInOffset;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.2s;
+
+	text-shadow: 2px 2px 4px grey;
+}
+
+.welcome-small{
+	font-size: 5vh;
+	text-align: center;
+	font-family: 'kollektif';
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+	
+	text-shadow: 1px 1px 3px grey;
+}
+
+.quickfade{
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.6s;
+}
+
+.slowfade{
+	opacity: 1;
+	animation-name: fadeInOffset;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+.fadein{
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOffset {
+	0%{
+		opacity: 0;
+	}
+	25% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.cover-fill{
+	background-color: whitesmoke;
+}
+
+.title{
+	background-color: whitesmoke;
+}
+
+.media-link {
+	width: 50%;
+}
+
+.home-shadow{
+    box-shadow: 2px 2px 6px grey;
+}
+
+.site-footer {
+	background-color: #222222;
+	margin: 10px 0px 0px 0px;
+	color: white;
+	width: 100%;
+    padding: 5vh 10vw 4vh 5vw;
+    font-family: 'kollektif';
+}
+
+.footer-link-light {
+	color: lightgray;
+    text-decoration: none;
+	font-family: 'Kollektif';
+	font-size: 2em;
+}
+
+.footer-link-light:hover {
+	color: white;
+    text-decoration: none;
+    font-family: 'Kollektif';
+}
+
+.footer-link {
+	color: gray;
+	text-decoration: none;
+}
+
+.footer-link:hover {
+	color: lightgray;
+	text-decoration: none;
+}
+
+.panel-video {
+	margin: auto;
+	width: 80%;
+	margin-bottom: 25px;
+}
+
+.margin-pos {
+	margin: auto;
+}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+}
+
+iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.calendar {
+	position: relative;
+	padding-bottom: 75%;
+	height: 0;
+}
+
+.calendar iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.poster {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.top-margin-lg {
+	margin-top: 80px;
+}
+
+.top-margin-sm {
+	margin-top: 30px;
+}
+
+.side-margin {
+	margin: 0px 30px;
+}
+
+.site-panel {
+	margin-top: 10px;
+	padding: 5px;
+	box-shadow: 0 0 10px gray;
+}
+
+.site-util {
+	margin-top: 15px;
+}
+
+.project {
+    font-size: 1.5cm;
+    font-family: 'Kollektif';
+}
+
+.blog-post {
+	font-size: 0.75cm;
+	font-family: 'Kollektif';
+	align-content: 'left';
+}
+
+.portfolio-header {
+	font-size: 1cm;
+	font-family: 'kollektif';
+}
+
+.date {
+	font-family: 'Kollektif';
+	font-size: 0.5cm;
+	align-content: 'left';
+}
+
+.post-content{
+	font-family: 'Kollektif';
+	align-content: 'left';
+}
+
+.card-header {
+    background-color: white;
+}
+
+.card {
+    background-color: white;
+    box-shadow: #A5FFE8;
+}
+
+.contents {
+    font-size : 0.7cm;
+    font-family: 'Kollektif';
+}
+
+.nav-text{
+    font-family: 'kollektif';
+    font-size : 20px;
+	color : darkslategrey;
+	margin-top : 0px;
+}
+
+.portfolio-contents {
+	font-family: 'kollektif';
+	font-size : 0.5cm;
+}
+.caption-col{
+	font-family : 'kollektif';
+	color : whitesmoke;
+	font-size : 1.5em;
+	text-shadow : 1px 1px 4px black;
+	text-shadow: 5cm;
+}
+
+.contact-form{
+	min-height : 730px;
+}
+
+.image-round{
+	border-radius : 35px;
+}
+
+
+.sidenav {
+    top:32vh;
+    position: fixed;
+    overflow-x: hidden;
+}
+
+@media all and (min-width: 500){
+	.sidenav {
+		height: 100%;
+		width: 16vw;
+        position: fixed;
+		z-index: 1;
+		top: 50vh;
+		left: 25;
+		overflow-x: hidden;
+		padding-top: 20px;
+	}
+}
+
+@media all and (max-width: 499){
+	.sidenav {
+		height: 100%;
+		width: 0vw;
+        position: fixed;
+		z-index: 1;
+		top: 50vh;
+		left: 25;
+		overflow-x: hidden;
+        padding-top: 20px;
+        opacity: 0;
+	}
+}
+
+.chapnav{
+	font-family: 'Kollektif';
+	font-size: 1cm;
+}
+
+.choke{
+	max-width: 2160px;
+	margin: auto;
+}
+
+@font-face {
+    font-family: 'Kollektif';
+	src: local(kollektif),
+		url('assets/Kollektif.ttf') format('truetype'),
+		url('https://inhostudios.github.io/assets/kollektif.ttf') format('truetype'),
+		url('https://inhostudios.github.io/assets/kollektif-webfont.woff') format('woff'),
+		url('https://inhostudios.github.io/assets/kollektif-webfont.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Kollektif-bold';
+    src: url('https://inhostudios.github.io/assets/Kollektif-bold.ttf') format('truetype');
+}
