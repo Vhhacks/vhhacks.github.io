@@ -1,0 +1,78 @@
+/**************** service_part css start ****************/
+.service_part{
+   
+   .single_service_part_iner{
+      background-color: $single_section_bg;
+      padding: 50px 24px;
+      text-align: center;
+      border-radius: 5px;
+      @include transform_time(.6s);
+      @media #{$small_mobile}{
+         padding: 35px 14px;
+         margin: 10px 0px;
+      }
+      
+      @media #{$large_mobile}{
+         padding: 35px 14px;
+         margin: 10px 0px;
+      }
+      @media #{$tab_device}{
+         padding: 35px 14px;
+         margin: 10px 0px;
+      }
+      @media #{$medium_device}{
+      
+      }
+      span{
+         background-color: #586779;
+         width: 61px;
+         height: 61px;
+         font-size: 22px;
+         display: inline-block;
+         border-radius: 50%;
+         line-height: 60px;
+         color: #fff;
+         margin-bottom: 30px;
+         @include transform_time(.6s);
+      }
+      h3{
+         font-weight: 600;
+         margin-bottom: 26px;
+         font-size: 22px;
+         color: $white_color;
+         font-family: $font_stack_3;
+         @include transform_time(.6s);
+         @media #{$medium_device}{
+            font-size: 20px;
+            margin-bottom: 15px;
+         }
+      }
+      p{
+         font-size: 15px;
+         color: rgba(255, 255, 255, 0.4);
+         line-height: 1.8;
+         font-weight: 400;
+         @include transform_time(.6s);
+         @media #{$medium_device}{
+            font-size: 14px;
+            line-height: 1.5;
+         }
+      }
+   }
+   .single_service_part{
+      &:hover{
+         .single_service_part_iner{
+            background-color: $white_color;
+            h3{
+               color: #112e41;
+            }
+            p{
+               color: #888888;
+            }
+            span{
+               background-color: $btn_bg;
+            }
+         }
+      }  
+   }
+}

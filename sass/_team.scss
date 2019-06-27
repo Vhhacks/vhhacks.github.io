@@ -1,0 +1,136 @@
+/**************** team_part css start ****************/
+.team_member_section{
+    background-color: $section_bg_1;
+   
+    @media #{$small_mobile}{
+        padding-bottom: 50px;
+    }
+    @media #{$large_mobile}{
+        padding-bottom: 50px;
+    }
+    @media #{$tab_device}{
+        padding-bottom: 50px;
+    }
+    @media #{$medium_device}{
+    
+    }
+    .single_team_member{
+        border: 1px solid #45556a;
+        padding: 20px;
+        text-align: center;
+        @media #{$small_mobile}{
+            margin-bottom: 20px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        @media #{$large_mobile}{
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        @media #{$tab_device}{
+            margin-bottom: 20px;
+        }
+        @media #{$medium_device}{
+            padding: 10px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .single_team_text{
+            padding: 35px 10px;
+            @media #{$small_mobile}{
+                padding: 20px 5px;
+            }
+            @media #{$large_mobile}{
+                padding: 20px 5px;
+            }
+            @media #{$tab_device}{
+                padding: 20px 5px;
+            }
+            @media #{$medium_device}{
+                padding: 35px 5px;
+            }
+            h3{
+              a{
+                color: $white_color;  
+              }
+            }
+            p{
+                color: #abb2ba;
+                font-size: 14px;
+                margin-bottom: 26px;
+                margin-top: 11px;
+                @media #{$small_mobile}{
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+                @media #{$large_mobile}{
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+                @media #{$tab_device}{
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+                @media #{$medium_device}{
+                
+                }
+            }
+            .team_member_social_icon{
+                a{
+                    color: #abb2ba;
+                    margin: 0px 23px;
+                    text-transform: capitalize;
+                    position: relative;
+                    z-index: 1;
+                    @media #{$small_mobile}{
+                        margin: 0px 10px;
+                    }
+                    @media #{$large_mobile}{
+                        margin: 0px 10px;
+                    }
+                    @media #{$tab_device}{
+                        margin: 0px 10px;
+                    }
+                    @media #{$medium_device}{
+                        margin: 0px 10px;
+                    }
+                    &:after{
+                        position: absolute;
+                        content: "";
+                        width: 10px;
+                        height: 10px;
+                        top: 5px;
+                        right: -30px;
+                        background-color: #45556a;
+                        border-radius: 50%;
+                        @media #{$small_mobile}{
+                            top: 3px;
+                            right: -17px;
+                        }
+                        @media #{$large_mobile}{
+                            top: 3px;
+                            right: -17px;
+                        }
+                        @media #{$tab_device}{
+                            top: 3px;
+                            right: -17px;
+                        }
+                        @media #{$medium_device}{
+                            top: 3px;
+                            right: -17px;
+                        }
+                    }
+                    &:last-child:after{
+                        width: 0;
+                        height: 0;
+                    }
+                    
+                }
+            }
+        }
+    }
+}

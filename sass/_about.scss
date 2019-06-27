@@ -1,0 +1,304 @@
+/**************** about css start ****************/
+.about_part{
+    position: relative;
+    z-index: 1;
+    padding: 170px 0px 80px;
+    .col-lg-5 {
+        padding-left: 0px;
+        padding-right: 0px;
+        @media #{$small_mobile}{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        @media #{$large_mobile}{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        @media #{$tab_device}{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        @media #{$medium_device}{
+        
+        }
+    }
+    @media #{$small_mobile}{
+        padding: 70px 0 0;
+        background-position: top;
+        background-size: 100% 43%;
+    }
+    @media #{$large_mobile}{
+        padding: 70px 0 0;
+        background-position: top left;
+        background-size: 90% 56%;
+    }
+    @media #{$tab_device}{
+        padding: 70px 0 0;
+        background-position: left;
+        background-size: 48% 70%;
+    }
+    @media #{$medium_device}{
+        padding: 100px 0 0;
+    }
+    .about_img{
+        background-image: url(../img/about_overlay.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        position: relative;
+        background-size: 100% 100%;
+        height: 549px;
+        @media #{$small_mobile}{
+            height: 500px;
+            background-image: url(../img/about_img_1.png);
+            background-size: cover;
+        }
+        @media #{$large_mobile}{
+            height: 500px;
+            background-image: url(../img/about_img_1.png);
+            background-size: cover;
+        }
+        @media #{$tab_device}{
+            height: 500px;
+            background-image: url(../img/about_img_1.png);
+            background-size: cover;
+        }
+        @media #{$medium_device}{
+        
+        }
+        .img_1{
+            position: absolute;
+            left: 0;
+            top: 50px;
+            @media #{$small_mobile}{
+               display: none;
+            }
+            @media #{$large_mobile}{
+                display: none;
+            }
+            @media #{$tab_device}{
+                display: none;
+            }
+            @media #{$medium_device}{
+            
+            }
+        }
+        .img_2{
+            position: absolute;
+            right: -83px;
+            top: -50px;
+            @media #{$small_mobile}{
+                display: none;
+            }
+            @media #{$large_mobile}{
+                display: none;
+            }
+            @media #{$tab_device}{
+                display: none;
+            }
+            @media #{$medium_device}{
+                top: 0px;
+            }
+            @media #{$extra_big_screen}{
+                right: -55px;
+                top: -50px;
+            }
+        }
+        h2{
+            bottom: -29px;
+            right: -115px;
+            font-size: 42px;
+            font-weight: 600;
+            line-height: 45px;
+            position: absolute;
+            z-index: 6;
+            @media #{$small_mobile}{
+                bottom: 11px;
+                right: 0;
+                font-size: 25px;
+                left: 12px;
+                line-height: 35px;
+                color: $white_color;
+            }
+            @media #{$large_mobile}{
+                bottom: 11px;
+                right: 0;
+                font-size: 25px;
+                left: 12px;
+                line-height: 35px;
+                color: $white_color;
+            }
+            @media #{$tab_device}{
+                bottom: 11px;
+                right: 0;
+                font-size: 25px;
+                left: 12px;
+                line-height: 35px;
+                color: $white_color;
+            }
+            @media #{$medium_device}{
+                display: none;
+            }
+            @media #{$extra_big_screen}{
+                right: -14px;
+                line-height: 55px;
+                bottom: -47px;
+            }
+            &:after{
+                position: absolute;
+                content: "";
+                width: 190px;
+                height: 210px;
+                border: 8px solid $btn_bg;
+                left: -126px;
+                top: -54px;
+                z-index: -1;
+                @media #{$small_mobile}{
+                    width: 100px;
+                    height: 100px;
+                    left: -12px;
+                    top: -55px;
+                    
+                }
+                @media #{$large_mobile}{
+                    width: 150px;
+                    height: 150px;
+                    left: -12px;
+                    top: -55px;
+                }
+                @media #{$tab_device}{
+                    width: 150px;
+                    height: 150px;
+                    left: -12px;
+                    top: -55px;
+                }
+                @media #{$medium_device}{
+                
+                }
+            }
+        }
+    }
+    .about_text{
+        padding-left: 63px;
+        @media #{$small_mobile}{
+            padding-left: 0px;
+            margin-top: 20px;
+        }
+        @media #{$large_mobile}{
+            padding-left: 0px;
+            margin-top: 20px;
+        }
+        @media #{$tab_device}{
+            padding-left: 0px;
+            margin-top: 20px;
+        }
+        @media #{$extra_big_screen}{
+            padding-left: 43px;
+            padding-right: 73px;
+        }
+        h5{
+            color: $btn_bg;
+            font-size: 14px;
+            font-family: $font_stack_1;
+            text-transform: uppercase;
+            margin-bottom: 7px;
+        }
+        h4{
+            margin-bottom: 30px;
+            font-size: 20px;
+            font-family: $font_stack_3;     
+            font-weight: 400; 
+            line-height: 1.5;
+            @media #{$small_mobile}{
+                margin-bottom: 20px;
+                font-size: 17px;
+            }
+            @media #{$large_mobile}{
+                margin-bottom: 20px;
+                font-size: 17px;
+            }
+            @media #{$tab_device}{
+                margin-bottom: 20px;
+                font-size: 17px;
+            }
+            @media #{$medium_device}{
+                margin-bottom: 20px;
+                font-size: 17px;
+            }       
+        }
+        h2{
+            line-height: 1.25;
+            margin-bottom: 27px;
+            @media #{$small_mobile}{
+                margin-bottom: 15px;
+            }
+            @media #{$large_mobile}{
+                margin-bottom: 15px;
+            }
+            @media #{$tab_device}{
+                font-size: 25px;  
+                margin-bottom: 15px;
+            }
+            @media #{$medium_device}{
+                font-size: 25px;  
+                margin-bottom: 15px;
+            }
+        }
+        p{
+            margin-top: 13px;
+            font-size: 15px;
+        }
+    }
+    .hero-app-7 {
+        position: absolute;
+        top: 8%;
+        left: 10%;
+    }
+    .hero-app-8 {
+        position: absolute;
+        left: 35%;
+        bottom: 50%;
+    }
+}
+.our_service_part{
+    background-image: url(../img/service_bg_2.png);
+    background-repeat: no-repeat;
+    background-position: left ;
+    background-size: 25% 77%;
+    @media #{$small_mobile}{
+        padding-top: 0px;
+        background-position: top left; 
+        background-size: 100% 35%;
+    }
+    @media #{$large_mobile}{
+        padding-top: 0px;
+        background-position: top left;
+        background-size: 95% 55%;
+    }
+    @media #{$tab_device}{
+        background-position: left;
+        background-size: 48% 70%;
+    }
+    @media #{$medium_device}{
+    
+    }
+    .about_text {
+        h2{
+            margin-bottom: 20px;
+        }
+    }
+}
+.about_padding{
+    padding: 180px 0px;
+    @media #{$small_mobile}{
+        padding: 70px 0px;
+    }
+    @media #{$large_mobile}{
+        padding: 70px 0px;
+    }
+    @media #{$tab_device}{
+        padding: 70px 0px;
+    }
+    @media #{$medium_device}{
+        padding: 100px 0px;
+    }
+}

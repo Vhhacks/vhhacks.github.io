@@ -1,0 +1,78 @@
+/**************** service_part css start ****************/
+.happy_client {
+    background-color: $section_bg_1;
+    padding: 110px 0px 80px;
+    @media #{$small_mobile}{
+        padding: 50px 0px 60px;
+    }
+    @media #{$large_mobile}{
+        padding: 50px 0px 60px;
+    }
+    @media #{$tab_device}{
+        padding: 50px 0px 60px;
+    }
+    @media #{$medium_device}{
+        padding: 80px 0px 80px;
+    }
+    .single_happy_client{
+        @media #{$small_mobile}{
+            margin: 20px 0px;
+        }
+        @media #{$large_mobile}{
+            margin: 20px 0px;
+        }
+        @media #{$tab_device}{
+            margin: 20px 0px;
+        }
+        @media #{$medium_device}{
+        
+        }
+        img{
+            width: 78px;
+            height: 58px;
+            display: block;
+            margin-bottom: 8px;
+            margin-left: -10px;
+        }
+        span{
+            font-size: 60px;
+            font-weight: 700;
+            color: $white_color;
+            display: inline-block;
+            float: left;
+            font-style: $font_stack_1;
+            @media #{$small_mobile}{
+                line-height: 67px;
+            }
+            @media #{$large_mobile}{
+                line-height: 67px;
+            }
+            @media #{$tab_device}{
+                line-height: 67px;
+            }
+            @media #{$medium_device}{
+            
+            }
+        }
+        h4{
+           color: $white_color;
+           font-size: 22px;
+           font-size: 500;
+           padding-left: 88px;
+           margin-top: 28px;
+           text-transform: uppercase;
+            @media #{$small_mobile}{
+                margin-top: 15px;
+            }
+            @media #{$large_mobile}{
+                margin-top: 15px;
+            }
+            @media #{$tab_device}{
+                margin-top: 15px;
+            }
+            @media #{$medium_device}{
+            
+            }
+        }
+    }
+}

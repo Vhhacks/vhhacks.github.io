@@ -1,0 +1,120 @@
+/**************** service_part css start ****************/
+.our_latest_work {
+    .col-lg-6{
+        padding-right: 0px;
+        padding-left: 0px;
+        @media #{$small_mobile}{
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        @media #{$large_mobile}{
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        @media #{$tab_device}{
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        @media #{$medium_device}{
+        
+        }
+    }
+    .single_work_demo{
+        padding-left: 76px;
+        @media #{$small_mobile}{
+            padding-left: 0px;
+        }
+        @media #{$large_mobile}{
+            padding-left: 0px;
+        }
+        @media #{$tab_device}{
+            padding-left: 0px;
+        }
+        @media #{$medium_device}{
+            padding-left: 0px;
+        }
+        @media #{$extra_big_screen}{
+            padding-left: 218px;
+        }
+        h5{
+            color: $btn_bg;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: 21px;
+            @media #{$small_mobile}{
+                margin-bottom: 15px;
+                margin-top: 10px;
+            }
+            @media #{$large_mobile}{
+                margin-bottom: 15px;
+                margin-top: 10px;
+            }
+            @media #{$tab_device}{
+                margin-bottom: 15px;
+                margin-top: 10px;
+            }
+            @media #{$medium_device}{
+            
+            }
+        }
+        h3{
+            font-size: 30px;
+            line-height: 1.333;
+            margin-bottom: 30px;
+            @media #{$small_mobile}{
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            @media #{$large_mobile}{
+                font-size: 25px;
+                margin-bottom: 15px;
+            }
+            @media #{$tab_device}{
+                font-size: 25px;
+                margin-bottom: 15px;
+            }
+            @media #{$medium_device}{
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+        }   
+    }
+    .single_work:nth-child(2n+2){
+        margin: 80px 0px;
+        .single_work_demo{
+            padding-left: 45px;
+            @media #{$small_mobile}{
+                padding-left: 0px;
+            }
+            @media #{$large_mobile}{
+                padding-left: 0px;
+            }
+            @media #{$tab_device}{
+                padding-left: 0px;
+            }
+            @media #{$medium_device}{
+                padding-left: 0px;
+            }
+            @media #{$extra_big_screen}{
+                padding-right: 150px;
+            }
+        }
+        @media #{$small_mobile}{
+            margin: 20px 0px;
+        }
+        @media #{$large_mobile}{
+            margin: 20px 0px;
+        }
+        @media #{$tab_device}{
+            margin: 20px 0px;
+        }
+        @media #{$medium_device}{
+            margin: 40px 0px;
+        }
+    }
+    .demo_img{
+        img{
+            width: 100%;
+        }
+    }
+}

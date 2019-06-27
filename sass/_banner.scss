@@ -1,0 +1,220 @@
+/**************** banner part css start ****************/
+.banner_part{
+    height: 900px;
+    position: relative;
+    z-index: 1;
+    // @include background("../img/banner_bg.png");
+    background-color: $section_bg;
+    &:after{
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        background: url('../img/banner_overlay_2.png') top right no-repeat;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        @media #{$small_mobile}{
+            display: none;
+        }
+        @media #{$large_mobile}{
+            display: none;
+        }
+        @media #{$tab_device}{
+            display: none;
+        }
+        @media #{$medium_device}{
+            display: none;
+        }
+    }
+    &:before{
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        background: url('../img/banner_overlay_1.png') bottom left no-repeat;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        @media #{$small_mobile}{
+            display: none;
+        }
+        @media #{$large_mobile}{
+            display: none;
+        }
+        @media #{$tab_device}{
+            display: none;
+        }
+        @media #{$medium_device}{
+            
+        }
+    }
+    @media #{$small_mobile}{
+        height: 700px;
+        background-image: none;
+        background-color: #f0eed4;
+    }
+    @media #{$large_mobile}{
+        height: 700px;
+        background-image: none;
+        background-color: #f0eed4;
+    }
+    @media #{$tab_device}{
+        height: 700px;
+        background-image: none;
+        background-color: #f0eed4;
+    }
+    @media #{$medium_device}{
+        background-size: 45% 75%;
+        height: 800px;
+    }
+    .banner_bg {
+        position: relative;
+    }        
+    .banner_bg img {
+        margin-left: 20%;
+        @media #{$small_mobile}{
+            margin-left: auto;
+            max-width: 300px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            text-align: center;
+            bottom: 100px;
+            position: absolute;
+            bottom: 300px;
+        }
+        @media #{$large_mobile}{
+            margin-left: 0%;
+            max-width: 300px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            text-align: center;
+            bottom: 100px;
+            position: absolute;
+            bottom: 300px;
+        }
+        @media #{$tab_device}{
+            margin-left: 6%;
+        }
+        @media #{$medium_device}{
+            margin-left: 0%;
+        }
+        @media #{$big_screen}{
+            margin-left: 10%;
+        }
+    }
+    .banner_text{
+        display: table;
+        width: 100%;
+        height: 900px;
+        .banner_text_iner{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        @media #{$small_mobile}{
+            text-align: center;
+            padding-top: 0px;
+            height: 700px;
+            padding-top: 350px;
+        }
+        @media #{$large_mobile}{
+            text-align: center;
+            padding-top: 0px;
+            height: 700px;
+            padding-top: 350px;
+        }
+        @media #{$tab_device}{
+            text-align: center;
+            padding-top: 0px;
+            height: 700px;
+        }
+        @media #{$medium_device}{
+            height: 650px;
+        }
+        h2{
+            font-size: 100px;
+            text-transform: capitalize;
+            font-family: $font_stack_2;
+            font-weight: 800;
+            line-height: 90px;
+            text-transform: uppercase;
+            @media #{$small_mobile}{
+                font-size: 30px;
+                margin-bottom: 15px;
+                line-height: 1.3;
+            }
+            @media #{$large_mobile}{
+                font-size: 40px;
+                margin-bottom: 15px;
+                line-height: 1.3;
+            }
+            @media #{$tab_device}{
+                font-size: 40px;
+                margin-bottom: 15px;
+                line-height: 1.3;
+            }
+            @media #{$medium_device}{
+                font-size: 40px;
+                margin-bottom: 15px;
+                line-height: 1.4;
+            }
+            span{
+                font-size: 70%;
+                display: block;
+            }
+        }
+        
+        h3{
+            font-size: 70px;
+            font-family: $font_stack_1;
+            font-weight: 300;
+            text-transform: uppercase;
+            line-height: 52px;
+            @media #{$small_mobile}{
+                font-size: 20px;
+                line-height: 20px;
+            }
+            @media #{$large_mobile}{
+                font-size: 20px;
+                line-height: 20px;
+            }
+            @media #{$tab_device}{
+                font-size: 20px;
+                line-height: 20px;
+            }
+            @media #{$medium_device}{
+                font-size: 30px;
+                line-height: 20px;
+            }
+        }
+        .btn_1{
+            margin-top: 60px;
+            @media #{$small_mobile}{
+                margin-top: 20px;
+            }
+            @media #{$large_mobile}{
+                margin-top: 20px;
+            }
+            @media #{$tab_device}{
+                margin-top: 20px;
+            }
+            @media #{$medium_device}{
+                margin-top: 20px;
+            }
+            i{
+                font-size: 12px;
+                margin-left: 5px;
+            }
+        }
+    }
+    .hero-app-8 {
+        position: absolute;
+        left: 60%;
+        bottom: 13%;
+        top: auto;
+    }
+}
+  
+/**************** hero part css end ****************/
