@@ -2563,15 +2563,15 @@ ul {
   display: block;
   margin-top: 18px;
   border: 0px solid transparent;
-  background-color: #e614ff;
+  background-color: #ffffff;
 }
 
 /* line 67, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_menu.scss */
 .dropdown .dropdown-menu .dropdown-item {
   font-size: 14px;
   padding: 8px 20px !important;
-  color: #fff !important;
-  background-color: #e614ff;
+  color: #000000 !important;
+  background-color: #ffffff;
 }
 
 /* line 77, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_menu.scss */
