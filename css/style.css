@@ -5084,9 +5084,7 @@ ul {
 /* line 60, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_blog_part.scss */
 .blog_part .single-home-blog .card .card-body {
   padding: 30px;
-  background-color: #fff;
-  border: 1px solid #e2e6e7;
-  border-top: 0px solid transparent;
+  background-color: #F4AC31;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
