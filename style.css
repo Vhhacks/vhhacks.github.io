@@ -390,12 +390,12 @@ input:-webkit-autofill:focus {
 .header-text h2 {
     margin-bottom: 20px;
     font-size: 100px;
-    color: #000913;
+    color: #ffffff;
 }
 
 .header-text p{
     font-size : 30px;
-    color: #000913;
+    color: #000000;
 }
 
 .header-text .button {
