@@ -979,3 +979,15 @@ preloader
         opacity: 0;
     }
 }
+
+@font-face {
+    font-family: 'Inter';
+    src: local(inter),
+        url('fonts/Inter-Regular.woff') format('woff'),
+        url('https://vhhacks.ca/fonts/Inter-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Kollektif';
+
+}
