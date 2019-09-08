@@ -253,7 +253,7 @@ input:-webkit-autofill:focus {
     box-shadow: 0 0 0 0 #ffffff;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 25px;
     -webkit-transform: translateY(0);
     transform: translateY(0)
 }
@@ -261,13 +261,12 @@ input:-webkit-autofill:focus {
 .box:hover {
     -webkit-box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
     box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px)
 }
 
-.box h4 {
-    text-transform: uppercase;
+.box h4, p {
+    color:#ffffff;
 }
 
 .box .box-icon {
