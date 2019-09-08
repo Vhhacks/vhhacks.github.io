@@ -75,7 +75,7 @@ body {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 1.8;
@@ -232,7 +232,7 @@ input:-webkit-autofill:focus {
 
 .page-title h2:after {
     content: "\e675";
-    font-family: 'themify';
+    font-family: 'Inter';
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
