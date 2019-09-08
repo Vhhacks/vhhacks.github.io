@@ -389,8 +389,8 @@ input:-webkit-autofill:focus {
 
 .header-text h2 {
     margin-bottom: 20px;
-    font-size: 100px;
-    color: #ffffff;
+    font-size: 80px;
+    color: #000000;
 }
 
 .header-text p{
