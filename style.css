@@ -372,7 +372,7 @@ input:-webkit-autofill:focus {
 }
 
 .anlge-bg {
-    background: url('images/Flat_Vancouver_2.png') no-repeat scroll center bottom -120px / 100% auto;
+    background: url('images/Flat_Vancouver_2.png') no-repeat scroll center bottom / 100% auto;
 }
 
 .overlay {

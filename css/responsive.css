@@ -44,7 +44,7 @@
     .header-area {
         padding-top: 120px;
         padding-bottom: 100px;
-        height: auto;
+        height: 100vh;
     }
     .page-title h2,
     .header-text h2 {
