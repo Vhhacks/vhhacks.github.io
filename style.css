@@ -66,7 +66,7 @@ h4,
 h5,
 h6 {
     margin: 0 0 10px;
-    font-weight: 600;
+    font-family: 'Kollektif';
 }
 
 html,
@@ -75,7 +75,7 @@ body {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 400;
     font-size: 15px;
     line-height: 1.8;
@@ -231,7 +231,7 @@ input:-webkit-autofill:focus {
 
 .page-title h2:after {
     content: "\e675";
-    font-family: 'Inter';
+    font-family: 'Kollektif';
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -355,7 +355,7 @@ input:-webkit-autofill:focus {
 }
 
 .mainmenu-area.affix {
-    background-color: #33b9db;
+    background-color: #44adef;
 }
 
 
@@ -389,7 +389,13 @@ input:-webkit-autofill:focus {
 
 .header-text h2 {
     margin-bottom: 20px;
-    font-size: 40px;
+    font-size: 100px;
+    color: #000913;
+}
+
+.header-text p{
+    font-size : 30px;
+    color: #000913;
 }
 
 .header-text .button {
@@ -989,5 +995,9 @@ preloader
 
 @font-face {
     font-family: 'Kollektif';
-
+    src: local(Kollektif),
+        url('fonts/kollektif-webfont.woff') format('woff'),
+        url('fonts/kollektif-webfont.woff2') format('woff2'),
+        url('https://vhhacks.ca/fonts/kollektif-webfont.woff') format('woff'),
+        url('https://vhhacks.ca/fonts/kollektif-webfont.woff2') format('woff2');
 }
