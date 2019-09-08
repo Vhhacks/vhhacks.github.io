@@ -369,6 +369,10 @@ input:-webkit-autofill:focus {
     background: #000000 url('images/vhhacksbackground.png') no-repeat scroll center center / cover;
 }
 
+.header-skyline{
+    background: url('images/skyline.png') no-repeat scroll center bottom / 100% auto;
+}
+
 .anlge-bg {
     background: url('images/vancouver.png') no-repeat scroll center bottom / 100% auto;
 }
