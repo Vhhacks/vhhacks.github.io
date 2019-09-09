@@ -51,7 +51,7 @@ a:focus,
 a:hover {
     text-decoration: none;
     outline: none;
-    color: #000000;
+    color: #0e2946;
 }
 
 img {
@@ -365,7 +365,7 @@ input:-webkit-autofill:focus {
 
 .client-area,
 .header-area {
-    background: #000000 url('images/vhhacksbackground.png') no-repeat scroll center center / cover;
+    background: #0e2946 url('images/vhhacksbackground.png') no-repeat scroll center center / cover;
 }
 
 .header-skyline{
@@ -393,12 +393,12 @@ input:-webkit-autofill:focus {
 .header-text h2 {
     margin-bottom: 20px;
     font-size: 80px;
-    color: #000000;
+    color: #0e2946;
 }
 
 .header-text p{
     font-size : 40px;
-    color: #000000;
+    color: #0e2946;
 }
 
 .header-text .button {
