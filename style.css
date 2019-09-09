@@ -365,7 +365,7 @@ input:-webkit-autofill:focus {
 
 .client-area,
 .header-area {
-    background: #0e2946 url('images/vhhacksbackground.png') no-repeat scroll center center / cover;
+    background: #0e2946 url('images/vhhacksbackground.png') no-repeat scroll center bottom / cover;
 }
 
 .header-skyline{
@@ -403,6 +403,7 @@ input:-webkit-autofill:focus {
 
 .header-text .button {
     margin-top: 30px;
+    font-size: 30px;
 }
 
 .screen-slider .item {
