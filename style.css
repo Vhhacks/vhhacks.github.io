@@ -192,7 +192,7 @@ input:-webkit-autofill:focus {
     padding: 8px 30px;
     border-radius: 50px;
     color: #ffffff;
-    background-color: #2f60c3;
+    background-color: #007eff;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     border: none;
@@ -207,7 +207,7 @@ input:-webkit-autofill:focus {
 }
 
 .button.white:hover {
-    background-color: #2f60c3;
+    background-color: #007eff;
     color: #ffffff;
 }
 
