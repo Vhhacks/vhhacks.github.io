@@ -98,8 +98,8 @@ input:-webkit-autofill:focus {
 
 #bubbles {
     position: fixed;
-    width: 100vmin;
-    height: 100vmax;
+    width: 100%;
+    height: 100vh;
     left: 0px;
     top: 0px;
     z-index: 10;
