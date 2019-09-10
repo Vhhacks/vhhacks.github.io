@@ -76,6 +76,8 @@ h6 {
 html,
 body {
     height: 100%
+    max-width:100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -961,6 +963,30 @@ preloader
 .sk-folding-cube .sk-cube4:before {
     -webkit-animation-delay: 0.9s;
     animation-delay: 0.9s;
+}
+
+#fish1{
+    width: 100px;
+    height: 100px;
+    animation: swimRight 30s infinite;
+}
+
+@keyframes swimRight {
+    0% {
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(125vw);
+    }
+}
+
+@keyframes swimLeft {
+    0% {
+        transform: translateX(125vw);
+    }
+    100%{
+        transform: translateX(-500px);
+    }
 }
 
 @-webkit-keyframes sk-foldCubeAngle {
