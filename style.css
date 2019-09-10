@@ -37,6 +37,10 @@ CSS INDEX
 2. Theme Default CSS
 --------------------*/
 
+* {
+	z-index: 10
+}
+
 a {
     text-decoration: none;
     outline: none;
@@ -102,7 +106,7 @@ input:-webkit-autofill:focus {
     height: 100vh;
     left: 0px;
     top: 0px;
-    z-index: 10;
+    z-index: 5;
 }
 
 .full-height {
@@ -187,7 +191,7 @@ input:-webkit-autofill:focus {
     background: linear-gradient(to bottom, #007eff 0%, #000913 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
     color: #ffffff;
-    z-index:9;
+    z-index:0;
 }
 
 .gray-bg {
