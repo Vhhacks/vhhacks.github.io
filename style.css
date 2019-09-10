@@ -95,6 +95,15 @@ input:-webkit-autofill:focus {
 *Helper-Classes
 **/
 
+
+#bubbles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 100vh;
+}
+
 .full-height {
     width: 100%;
     height: 100vh;
@@ -177,6 +186,7 @@ input:-webkit-autofill:focus {
     background: linear-gradient(to bottom, #007eff 0%, #000913 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
     color: #ffffff;
+    z-index:10;
 }
 
 .gray-bg {
