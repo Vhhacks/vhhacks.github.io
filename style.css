@@ -102,6 +102,7 @@ input:-webkit-autofill:focus {
     height: 100%;
     left: 0px;
     top: 0px;
+    z-index: 10;
 }
 
 .full-height {
@@ -186,7 +187,7 @@ input:-webkit-autofill:focus {
     background: linear-gradient(to bottom, #007eff 0%, #000913 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
     color: #ffffff;
-    z-index:10;
+    z-index:9;
 }
 
 .gray-bg {
@@ -375,6 +376,7 @@ input:-webkit-autofill:focus {
 .client-area,
 .header-area {
     background: #0e2946 url('images/vhhacksbackground.png') no-repeat scroll center bottom / cover;
+    z-index:11;
 }
 
 .header-skyline{
@@ -804,12 +806,12 @@ input:-webkit-autofill:focus {
 
 .footer-area {
     padding-top: 120px;
-    z-index: 1;
+    z-index:11;
 }
 
 .footer-bg {
     background: url('images/Sea_Floor.svg') no-repeat scroll center bottom / 100% auto;
-    z-index: -1;
+    z-index:11 !important;
 }
 
 .footer-top {
