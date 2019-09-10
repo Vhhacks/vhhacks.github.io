@@ -230,7 +230,6 @@ input:-webkit-autofill:focus {
 }
 
 .page-title h2:after {
-    content: "\e675";
     font-family: 'Kollektif';
     position: absolute;
     left: 50%;
