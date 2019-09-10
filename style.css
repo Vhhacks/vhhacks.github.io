@@ -798,7 +798,7 @@ input:-webkit-autofill:focus {
 }
 
 .footer-bg {
-    background: url('images/angle-bg.png') no-repeat scroll center bottom / 100% auto;
+    background: url('images/Sea_Floor.svg') no-repeat scroll center bottom / 100% auto;
     z-index: -1;
 }
 
