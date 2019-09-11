@@ -989,26 +989,44 @@ preloader
 }
 
 #fish1{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     animation: swimRight 30s infinite;
+}
+
+#fish2{
+    width: 150px;
+    height: 150px;
+    animation: swimLeft 15s infinite;
+}
+
+#fish3{
+     width: 175px;
+     height: 175px;
+     animation: swimRight 10s infinite;
+ }
+
+#fish4{
+    width: 160px;
+    height: 160px;
+    animation: swimLeft 25s infinite;
 }
 
 @keyframes swimRight {
     0% {
-        transform: translateX(-200px);
+        transform: translateX(-200px) scaleX(-1);
     }
     100%{
-        transform: translateX(125vw);
+        transform: translateX(115vw) scaleX(-1);
     }
 }
 
 @keyframes swimLeft {
     0% {
-        transform: translateX(125vw);
+        transform: translateX(115vw);
     }
     100%{
-        transform: translateX(-500px);
+        transform: translateX(-200px);
     }
 }
 
