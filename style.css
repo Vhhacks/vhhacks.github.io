@@ -117,8 +117,7 @@ input:-webkit-autofill:focus {
         transform: scaleX(-1) translateY(0px) translateX(-10vw);;
     }
     50%{
-        transform: scaleX(-1) translateY(-20px) translateX(-10vw);;
-
+        transform: scaleX(-1) translateY(-25px) translateX(-10vw);;
     }
     100%{
         transform: scaleX(-1) translateY(0px) translateX(-10vw);;
