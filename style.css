@@ -114,13 +114,13 @@ input:-webkit-autofill:focus {
 
 @keyframes bob{
     0%{
-        transform: scaleX(-1) translateY(0px) translateX(-10vw);;
+        transform: scaleX(-1) translateY(0px) translateX(-10vw) rotateZ(20deg);
     }
     50%{
-        transform: scaleX(-1) translateY(-25px) translateX(-10vw);;
+        transform: scaleX(-1) translateY(-25px) translateX(-10vw) rotateZ(30deg);
     }
     100%{
-        transform: scaleX(-1) translateY(0px) translateX(-10vw);;
+        transform: scaleX(-1) translateY(0px) translateX(-10vw) rotateZ(20deg);
 
     }
 }
