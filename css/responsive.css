@@ -101,6 +101,11 @@
         width:30vmax;
         height:30vh;
     }
+    #beluga{
+        width: 60vw;
+        height:60vw;
+        transform: scaleX(-1) translateX(0);
+    }
 }
 
 
