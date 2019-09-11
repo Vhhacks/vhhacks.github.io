@@ -23,7 +23,7 @@ particlesJS('bubbles',
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#2792ff"
       },
       "shape": {
         "type": "circle",
@@ -41,7 +41,7 @@ particlesJS('bubbles',
         }
       },
       "opacity": {
-        "value": 0.3,
+        "value": 0.2,
         "random": false,
         "anim": {
           "enable": false,
