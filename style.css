@@ -110,6 +110,7 @@ input:-webkit-autofill:focus {
     transform: scaleX(-1) translateX(-10vw);
     animation: bob 5s infinite;
     font-size:0;
+    shape-rendering: crispEdges;
 }
 
 @keyframes bob{
