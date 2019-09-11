@@ -101,6 +101,14 @@ input:-webkit-autofill:focus {
 *Helper-Classes
 **/
 
+/*beluga*/
+#beluga{
+    position:absolute;
+    width: 20vw;
+    height: 20vw;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1) translateX(-10vw);
+}
 
 #bubbles {
     position: absolute;
