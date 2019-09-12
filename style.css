@@ -408,7 +408,7 @@ input:-webkit-autofill:focus {
 
 .client-area,
 .header-area {
-    background: #0e2946 url('images/vhhacksbackground.png') no-repeat scroll center bottom / cover;
+    background: #0e2946 url('images/landingpage skyline.svg') no-repeat scroll center bottom / cover;
     z-index:11;
 }
 
