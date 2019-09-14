@@ -1020,6 +1020,13 @@ preloader
     animation: swimLeft 25s infinite;
 }
 
+
+#fish5{
+    width: 200px;
+    height: 200px;
+    animation: swimRight 35s infinite;
+}
+
 @keyframes swimRight {
     0% {
         transform: translateX(-200px) scaleX(-1);
