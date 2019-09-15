@@ -209,6 +209,20 @@ input:-webkit-autofill:focus {
     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
+.sicon{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sicon:hover{
+    opacity:0.7;
+}
+
+
+
 /**
 *Default Background Class
 **/
