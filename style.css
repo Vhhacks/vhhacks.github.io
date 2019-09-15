@@ -209,12 +209,18 @@ input:-webkit-autofill:focus {
     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
+.social-section{
+    display:flex;
+    justify-content:space-around;
+}
+
 .sicon{
-    padding: 20px;
+    padding: 100px 20px 20px;
     font-size: 30px;
     width: 50px;
     text-align: center;
     text-decoration: none;
+    z-index: 20 !important;
 }
 
 .sicon:hover{
