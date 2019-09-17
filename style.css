@@ -112,20 +112,20 @@ input:-webkit-autofill:focus {
     height: 20vw;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1) translateX(-10vw);
-    animation: bob 5s infinite;
+    animation: bob 7s infinite;
     font-size:0;
     shape-rendering: crispEdges;
 }
 
 @keyframes bob{
     0%{
-        transform: scaleX(-1) translateY(0px) translateX(-10vw) rotateZ(20deg);
+        transform: scaleX(-1) translateY(-25px) translateX(-10vw) rotateZ(-5deg);
     }
     50%{
-        transform: scaleX(-1) translateY(-25px) translateX(-10vw) rotateZ(30deg);
+        transform: scaleX(-1) translateY(0px) translateX(-10vw) rotateZ(5deg);
     }
     100%{
-        transform: scaleX(-1) translateY(0px) translateX(-10vw) rotateZ(20deg);
+        transform: scaleX(-1) translateY(-25px) translateX(-10vw) rotateZ(-5deg);
 
     }
 }
