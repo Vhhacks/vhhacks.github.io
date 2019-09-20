@@ -456,12 +456,12 @@ input:-webkit-autofill:focus {
 
 .header-text h2 {
     margin-bottom: 20px;
-    font-size: 80px;
-    color: #0e2946;
+    font-size: 100px;
+    color: #ffffff;
 }
 
 .header-text p{
-    font-size : 40px;
+    font-size : 30px;
     color: #0e2946;
 }
 
