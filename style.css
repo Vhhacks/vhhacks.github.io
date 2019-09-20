@@ -866,6 +866,10 @@ input:-webkit-autofill:focus {
     z-index:11;
 }
 
+.footer-txt{
+    z-index:12 !important;
+}
+
 .footer-bg {
     background: url('images/Sea_Floor.svg') no-repeat scroll center bottom / 100% auto;
     z-index:11 !important;
