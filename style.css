@@ -867,7 +867,7 @@ input:-webkit-autofill:focus {
 }
 
 .footer-txt{
-    z-index:12 !important;
+    z-index: 11 !important;
 }
 
 .footer-bg {

@@ -1068,6 +1068,10 @@ var pJS = function(tag_id, params){
       pJS.interactivity.el = pJS.canvas.el;
     }
 
+    window.addEventListener('resize', function(e){
+      pJS.fn.retinaInit();
+      pJS.fn.canvasSize();
+    });
 
     /* detect mouse pos - on hover / click event */
     if(pJS.interactivity.events.onhover.enable || pJS.interactivity.events.onclick.enable){
