@@ -456,6 +456,7 @@ input:-webkit-autofill:focus {
     margin-bottom: 20px;
     font-size: 100px;
     color: #ffffff;
+    text-shadow: 2px 2px 10px #2f60c3;
 }
 
 .header-text p{
