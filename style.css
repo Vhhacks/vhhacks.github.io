@@ -1124,3 +1124,10 @@ preloader
         url('https://vhhacks.ca/fonts/kollektif-webfont.woff') format('woff'),
         url('https://vhhacks.ca/fonts/kollektif-webfont.woff2') format('woff2');
 }
+
+.signuphome{
+    opacity:0.69696969696696969;
+    transition:0.3s;
+}
+
+.signuphome:hover {opacity: 1}
