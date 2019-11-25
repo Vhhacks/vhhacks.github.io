@@ -241,6 +241,15 @@ input:-webkit-autofill:focus {
     z-index:0;
 }
 
+.btn-bg {
+    background: #75cbe7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#007eff), to(#f2fefe));
+    background: linear-gradient(to bottom, #007eff 0%, #f2fefe 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007eff', endColorstr='#f2fefe', GradientType=0);
+    color: #ffffff;
+    z-index:0;
+}
+
 .gray-bg {
     background-color: #f2fefe;
 }

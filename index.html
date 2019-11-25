@@ -94,9 +94,22 @@
                 <img src="images/vhhacksclear.png" style="max-height:20vh">
                 <h2>vhHacks 2020</h2>
                 <p>April 11 - 12<br>University of British Columbia</p>
-                <a href="signup.html" class="button">Mailing List</a>
+                <a data-toggle="collapse" data-parent="#accordion" href="#register"
+                   aria-expanded="true" class="button">Mailing List</a>
             </div>
             <div class="col-xs-2 col-md-2"></div>
+        </div>
+
+
+        <div class="row">
+            <div class="container-fluid">
+                <div id="accordion">
+                    <div id="register" class="panel-collapse collapse">
+                        <div class="container" style="padding-bottom: 15vh; padding-top: 8vh; border-radius:150px;">
+                            <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe class="airtable-embed" src="https://airtable.com/embed/shr61FjcsorqHvqtl?backgroundColor=cyan" frameborder="0" onmousewheel="" width="100%" style="background: transparent; height: 75vh;"></iframe>
+                        </div></div>
+                </div>
+            </div>
         </div>
     </div>
 </header>
@@ -123,6 +136,13 @@
                                     <div class="caption-button" data-animation="animated fadeInUp">
                                         <a href="https://www.facebook.com/events/432399567627158/" class="button">See the Facebook Event!</a>
                                     </div>
+                                    <!--
+                                    <div class="caption-button" data-animation="animated fadeInUp">
+                                        <a class="button" data-toggle="collapse" data-parent="#accordion" href="#register"
+                                           aria-expanded="true">Sign up!</a>
+                                    </div>
+                                    -->
+
                                 </div>
                                 <div class="col-xs-12 col-md-6">
                                     <div class="one" data-animation="animated fadeInRight">
@@ -134,7 +154,9 @@
                     </div>
                 </div>
             </div>
+
         </div>
+
     </section>
     <!--Feature-area-->
     <section class="section-padding" id="learn">
