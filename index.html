@@ -47,534 +47,580 @@
 </head>
 
 <body data-spy="scroll" data-target="#primary-menu">
+<script>
+    window.onload = function () {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+            vars[key] = value;
+        });
 
-<div class="preloader">
-    <div class="sk-folding-cube">
-        <div class="sk-cube1 sk-cube"></div>
-        <div class="sk-cube2 sk-cube"></div>
-        <div class="sk-cube4 sk-cube"></div>
-        <div class="sk-cube3 sk-cube"></div>
-    </div>
+        if (("ctf" in vars) && (vars["ctf"] == "true")) {
+            document.getElementById("hideable").setAttribute("class", "hide");
+            document.getElementById("ctf").setAttribute("class", "show");
+            console.log("CTF activated!")
+        }
+    }
+</script>
+<div id="ctf" class="hide">
+        seed = 202041112
+        <br>
+        code = ' . :~~^ _~ || !    H^h ^vs~/ ,\n_    /   ~h\n~ s phs ~  \n  O^ \\w ^  o_^_ ~r^c|\n" a" \'"  s _  ka^ \n ^ :|^~l~^p /e  _  `u \\e_^"  r_     _ ~\\\n\n_  .w~  ~   ae '
+        <br>
+        hint: sample from random.sample(range(-1,152),153)
 </div>
-<!--Mainmenu-area-->
-<div class="mainmenu-area" data-spy="affix" data-offset-top="100" id="navbar">
-    <div class="container">
-        <!--Logo-->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-menu">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="#" class="navbar-brand logo">
-                <img src="images/homeicon.png" class="d-inline-block" style="max-height:32px">
-            </a>
-        </div>
-        <!--Logo/-->
-        <nav class="collapse navbar-collapse" id="primary-menu">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#learn">Learn</a></li>
-                <li><a href="#spotlight">Spotlight</a></li>
-                <li><a href="#faq-page">FAQ</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</div>
-<!--Mainmenu-area/-->
-
-
-<!--Header-area-->
-<header class="header-area full-height relative v-center" id="home-page">
-    <div class="absolute anlge-bg"></div>
-    <div class="container">
-        <div class="row v-center">
-            <div class="col-xs-2 col-md-2"></div>
-            <div class="col-xs-8 col-md-8 header-text text-center">
-                <img src="images/vhhacksclear.png" style="max-height:20vh">
-                <h2>vhHacks 2020</h2>
-                <p>April 11 - 12<br>University of British Columbia</p>
-                <a data-toggle="collapse" data-parent="#accordion" href="#register"
-                   aria-expanded="true" class="button">Mailing List</a>
-            </div>
-            <div class="col-xs-2 col-md-2"></div>
-        </div>
-
-
-        <div class="row">
-            <div class="container-fluid">
-                <div id="accordion">
-                    <div id="register" class="panel-collapse collapse">
-                        <div class="container" style="padding-bottom: 15vh; padding-top: 8vh; border-radius:150px;">
-                            <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe class="airtable-embed" src="https://airtable.com/embed/shr61FjcsorqHvqtl?backgroundColor=cyan" frameborder="0" onmousewheel="" width="100%" style="background: transparent; height: 75vh;"></iframe>
-                        </div></div>
-                </div>
-            </div>
+<div id="hideable">
+    <div class="preloader">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
         </div>
     </div>
-</header>
-<!--Header-area/-->
-<div class="sky-bg">
-    <section class="angle-bg section-padding" id="about">
+    <!--Mainmenu-area-->
+    <div class="mainmenu-area" data-spy="affix" data-offset-top="100" id="navbar">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div id="caption_slide" class="carousel slide caption-slider" data-ride="carousel">
-                        <div class="item active row">
-                            <div class="v-center">
-                                <div class="col-xs-12 col-md-6">
-                                    <div class="caption-title" data-animation="animated fadeInUp">
-                                        <h2>What is vhHacks?</h2>
-                                    </div>
-                                    <div class="caption-desc" data-animation="animated fadeInUp">
-                                        <p>vhHacks is Greater Vancouver's biggest hackathon dedicated to
-                                            high school students. More than one hundred students
-                                            will gather and collaborate to build and
-                                            showcase a project in under 24 hours. No experience? No problem! vhHacks is
-                                            beginner friendly, so anyone can join and learn a new skill!</p>
-                                    </div>
-                                    <div class="caption-button" data-animation="animated fadeInUp">
-                                        <a target="_blank" href="https://www.facebook.com/events/432399567627158/" class="button">See the Facebook Event!</a>
-                                    </div>
-                                    <!--
-                                    <div class="caption-button" data-animation="animated fadeInUp">
-                                        <a class="button" data-toggle="collapse" data-parent="#accordion" href="#register"
-                                           aria-expanded="true">Sign up!</a>
-                                    </div>
-                                    -->
-
-                                </div>
-                                <div class="col-xs-12 col-md-6">
-                                    <div class="one" data-animation="animated fadeInRight">
-                                        <img src="images/vhhacksintro.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <!--Logo-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand logo">
+                    <img src="images/homeicon.png" class="d-inline-block" style="max-height:32px">
+                </a>
             </div>
-
+            <!--Logo/-->
+            <nav class="collapse navbar-collapse" id="primary-menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#learn">Learn</a></li>
+                    <li><a href="#spotlight">Spotlight</a></li>
+                    <li><a href="#faq-page">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
+    </div>
+    <!--Mainmenu-area/-->
 
-    </section>
-    <!--Feature-area-->
-    <section class="section-padding" id="learn">
+
+    <!--Header-area-->
+    <header class="header-area full-height relative v-center" id="home-page">
+        <div class="absolute anlge-bg"></div>
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                    <div class="page-title">
-                        <h2>Pick a path!</h2>
-                        <p>vhHacks is all about learning! If you haven't attended a hackathon before, pick a path below
-                            and dive into the world of hacking! More info to come!</p>
-                    </div>
+            <div class="row v-center">
+                <div class="col-xs-2 col-md-2"></div>
+                <div class="col-xs-8 col-md-8 header-text text-center">
+                    <img src="images/vhhacksclear.png" style="max-height:20vh">
+                    <h2>vhHacks 2020</h2>
+                    <p>April 11 - 12<br>University of British Columbia</p>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#register"
+                       aria-expanded="true" class="button">Mailing List</a>
                 </div>
+                <div class="col-xs-2 col-md-2"></div>
             </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/frontend-v1.svg" alt="" style="height:180px">
-                        </div>
-                        <h4>Designer</h4>
-                        <p>Design the user interface for your hack.</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/backend.svg" alt="" style="height:180px">
-                        </div>
-                        <h4>Programmer</h4>
-                        <p>Write the code that makes your hack work.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/game-v1.svg" alt="" style="height:180px">
-                        </div>
-                        <h4>Game developer</h4>
-                        <p>Create a unique game in a short period of time.</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/hardware-v1.svg" alt="" style="height:180px">
-                        </div>
-                        <h4>Hardware hacker</h4>
-                        <p>Use hardware to solve modern problems.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <img src="images/fishy-18.svg" id="fish1">
-    <section class="section-padding" id="spotlight">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                    <div class="page-title">
-                        <h2>Sponsor Spotlight</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                    <div class="testimonials">
-                        <div class="testimonial">
-                            <div class="testimonial-photo">
-                                <img src="images/avatar-small-1.png" alt="">
-                            </div>
-                            <h3>Sponsor!</h3>
-                            <p>Want to see your logo here? Reach out to us at <a
-                                    href="mailto:outreach@vhhacks.ca">outreach@vhhacks.ca</a>, or check out our
-                                <a href = "vhh-sp.pdf">sponsorship pack.</a></p>
-                        </div>
-                        <div class="testimonial">
-                            <div class="testimonial-photo">
-                                <img src="images/avatar-small-2.png" alt="">
-                            </div>
-                            <h3>Sponsor!</h3>
-                            <p>Want to see your logo here? Reach out to us at <a
-                                    href="mailto:outreach@vhhacks.ca">outreach@vhhacks.ca</a>, or check out our
-                                <a href = "vhh-sp.pdf">sponsorship pack.</a></p>
-                        </div>
-                        <div class="testimonial">
-                            <div class="testimonial-photo">
-                                <img src="images/avatar-small-3.png" alt="">
-                            </div>
-                            <h3>Sponsor!</h3>
-                            <p>Want to see your logo here? Reach out to us at <a
-                                    href="mailto:outreach@vhhacks.ca">outreach@vhhacks.ca</a>, or check out our
-                                <a href = "vhh-sp.pdf">sponsorship pack.</a></p>
-                        </div>
-                        <div class="testimonial">
-                            <div class="testimonial-photo">
-                                <img src="images/avatar-small-4.png" alt="">
-                            </div>
-                            <h3>Sponsor!</h3>
-                            <p>Want to see your logo here? Reach out to us at <a
-                                    href="mailto:outreach@vhhacks.ca">outreach@vhhacks.ca</a>, or check out our
-                                <a href = "vhh-sp.pdf">sponsorship pack.</a></p>
-                        </div>
-                        <div class="testimonial">
-                            <div class="testimonial-photo">
-                                <img src="images/avatar-small-5.png" alt="">
-                            </div>
-                            <h3>Sponsor!</h3>
-                            <p>Want to see your logo here? Reach out to us at <a
-                                    href="mailto:outreach@vhhacks.ca">outreach@vhhacks.ca</a>, or check out our
-                                <a href = "vhh-sp.pdf">sponsorship pack.</a></p>
-                        </div>
-                        <div class="testimonial">
-                            <div class="testimonial-photo">
-                                <img src="images/avatar-small-6.png" alt="">
-                            </div>
-                            <h3>Sponsor!</h3>
-                            <p>Want to see your logo here? Reach out to us at <a
-                                    href="mailto:outreach@vhhacks.ca">outreach@vhhacks.ca</a>, or check out our
-                                <a href = "vhh-sp.pdf">sponsorship pack.</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                            <p>Interested in becoming a sponsor? Reach out to us at <a href="mailto:outreach@vhhacks.ca">outreach@vhhacks.ca</a></p>
-                        </div>
-        </div>
-    </section>
-    <img src="images/fishy-17.svg" id="fish2">
 
-    <section class="section-padding" id="faq-page">
-        <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                    <div class="page-title">
-                        <h2>Frequently Asked Questions</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-11 col-sm-offset-1 col-md-11">
-                    <h2 style="padding-top:30px;">General Information</h2>
-
-                    <div class="panel-group" id="accordion">
-                        <div class="panel">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"
-                                   aria-expanded="true">What is a hackathon?</a>
-                            </h4>
-                            <div id="collapse1" class="panel-collapse collapse in">
-                                <p>A hackathon is an invention marathon. Students come together in teams to build cool
-                                    software and hardware projects over the course of 24 hours.</p>
+                <div class="container-fluid">
+                    <div id="accordion">
+                        <div id="register" class="panel-collapse collapse">
+                            <div class="container" style="padding-bottom: 15vh; padding-top: 8vh; border-radius:150px;">
+                                <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+                                <iframe class="airtable-embed"
+                                        src="https://airtable.com/embed/shr61FjcsorqHvqtl?backgroundColor=cyan"
+                                        frameborder="0" onmousewheel="" width="100%"
+                                        style="background: transparent; height: 75vh;"></iframe>
                             </div>
-                        </div>
-                        <div class="panel">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Who can attend?</a>
-                            </h4>
-                            <div id="collapse2" class="panel-collapse collapse">
-                                <p>vhHacks is open to all high school students of all skill levels. If you're older
-                                    (post-secondary or above) and have experience in computer science, you can apply to
-                                    be a mentor.</p>
-                            </div>
-                        </div>
-                        <div class="panel">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">How much does it
-                                    cost?</a>
-                            </h4>
-                            <div id="collapse3" class="panel-collapse collapse">
-                                <p>Nothing! vhHacks is completely free of charge at the event. However, if you are
-                                    booking a stay near the event, or taking public transport, those will cost
-                                    money.</p>
-                            </div>
-                        </div>
-
-                        <div class="panel">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Will there be
-                                    food?</a>
-                            </h4>
-                            <div id="collapse4" class="panel-collapse collapse">
-                                <p>Yes. Food and snacks are provided throughout the event, even overnight! (We know you
-                                    night owls get the munchies.) There are also restaurants around the venue to buy
-                                    food
-                                    and snacks, and you can always bring your own!</p>
-                            </div>
-                        </div>
-                        <div class="panel">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">What if I'm a
-                                    beginner?</a>
-                            </h4>
-                            <div id="collapse5" class="panel-collapse collapse">
-                                <p>Hackathons are <a
-                                        href="https://medium.com/tfogo/hackathons-are-for-beginners-77a9c9c0e000#.cj21niskl">very
-                                    beginner friendly.</a> Whether you're an absolute beginner, a new computer science
-                                    student, or an experienced hacker,
-                                    you're the right fit for vhHacks. Artists, musicians, athletes, gamers, everyone is
-                                    welcome!</p>
-                            </div>
-                        </div>
-                        <div class="panel">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Where is the
-                                    event?</a>
-                            </h4>
-                            <div id="collapse6" class="panel-collapse collapse">
-                                <p>vhHacks will be taking place in the AMS Great Hall. You can find
-                                    details about the room <a
-                                            href="https://www.ams.ubc.ca/the-nest/">here</a> and
-                                    directions to the venue <a
-                                            href="https://www.google.ca/maps/dir//AMS+Student+Nest,+University+Boulevard,+Vancouver,+BC/@49.2665688,-123.3199038,12z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x54867398c216945b:0xe9bbdd7328c09b21!2m2!1d-123.2498647!2d49.2664779!3e3">here.</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="panel">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Can I get travel
-                                    reimbursements?</a>
-                            </h4>
-                            <div id="collapse10" class="panel-collapse collapse">
-                                <p>
-                                    Unfortunately, we cannot directly provide travel reimbursement for our participants
-                                    at this time. But you can apply for <a href="https://grant.executebig.org">Execute Big's Travel
-                                    Grant</a>, so you can join us without having to pay for
-                                    travel!
-                                </p>
-                            </div>
-                        </div>
-                        <h2 style="padding-top:30px;">Teams</h2>
-                        <div class="panel">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">How big can my team
-                                    be?</a>
-                            </h4>
-                            <div id="collapse7" class="panel-collapse collapse">
-                                <p>
-                                    Teams are usually 2-4 people in size. Teams bigger than 4 will be split up into
-                                    smaller ones, since larger teams aren't usually the best solution for a 24 hour
-                                    event.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="panel">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">What happens if I
-                                    don't have a team?</a>
-                            </h4>
-                            <div id="collapse8" class="panel-collapse collapse">
-                                <p>
-                                    No worries! A lot of other hackers are in the same position. vhHacks staff will help
-                                    you find other teammates and provide you with opportunities to find others!
-                                </p>
-                            </div>
-                        </div>
-                        <h2 style="padding-top:30px;">At the Event</h2>
-                        <div class="panel">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">What should I
-                                    bring?</a>
-                            </h4>
-                            <div id="collapse9" class="panel-collapse collapse">
-                                <p>
-                                    Since vhHacks is a 24 hour event, prepare to stay overnight! Food will be
-                                    provided--more info to come.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" style="padding-top: 50px">
-                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                        <div class="page-title">
-                            <p class="text-center">Couldn't find an answer? Send your question to <a
-                                    href="mailto:contact@vhhacks.ca">contact@vhhacks.ca</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
-    <img src="images/fishy-15.svg" id="fish3">
-    <section class="section-padding" id="benefactors">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                    <div class="page-title">
-                        <h2>Sponsors</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <!--sponsors start-->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <a href="https://notion.so"><img src="images/Notion-logo-512.png"
-                                                             style="height:175px" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <a href="https://stickermule.com"><img src="images/sticker-mule-logo-light-bg.svg"
-                                                             style="height:175px" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <!--sponsors end-->
-            </div>
-            <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                <p>Interested in becoming a sponsor? Reach out to us at <a href="mailto:outreach@vhhacks.ca">outreach@vhhacks.ca</a>, or check out our
-                    <a href = "vhh-sp.pdf">sponsorship pack.</a>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <img src="images/fishy-14.svg" id="fish4">
-    <section class="section-padding" id="partners">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                    <div class="page-title">
-                        <h2>Community Partners</h2>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <!--partner start-->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <a href="https://www.nwplus.io"><img src="images/nwplus.png"
-                                                                 style="height:175px" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <a href="https://vikingsdev.ca"><img src="images/vikingsdevlogo.png"
-                                                                 style="height:175px" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <!--partner end-->
-            </div>
-        </div>
-    </section>
-
-    <section class="section-padding" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                    <div class="page-title">
-                        <h2>Get in touch with us.</h2>
-                        <p>Interested in sponsoring? <a href="mailto:outreach@vhhacks.ca">outreach@vhhacks.ca</a></p>
-                        <p>Have a question? <a href="mailto:contact@vhhacks.ca">contact@vhhacks.ca</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="social-section text-center">
-        <div class="container">
-            <div class="row">
-                <a href="https://www.instagram.com/vhhacks/" target="_blank"><i class="sicon ti-instagram"></i></a>
-                <a href="https://www.facebook.com/events/432399567627158/" target="_blank"><i
-                        class="sicon ti-facebook"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer-area relative" id="contact-page">
-        <div class="absolute footer-bg"></div>
-        <img src="images/angler.svg" id="beluga">
-        <div class="full-height footer-txt">
+    <div class="sky-bg">
+        <section class="angle-bg section-padding" id="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 text-center">
-                        <p>&copy;Copyright 2018 All rights reserved. <br>Made with <i class="ti-heart"
-                                                                                       aria-hidden="true"></i>
-                            by <a href="https://github.com/inhostudios">InhoStudios</a>. <br>Built with Colid
-                            by <a href="https://colorlib.com">Colorlib</a></p>
+                    <div class="col-xs-12">
+                        <div id="caption_slide" class="carousel slide caption-slider" data-ride="carousel">
+                            <div class="item active row">
+                                <div class="v-center">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="caption-title" data-animation="animated fadeInUp">
+                                            <h2>What is vhHacks?</h2>
+                                        </div>
+                                        <div class="caption-desc" data-animation="animated fadeInUp">
+                                            <p>vhHacks is Greater Vancouver's biggest hackathon dedicated to
+                                                high school students. More than one hundred students
+                                                will gather and collaborate to build and
+                                                showcase a project in under 24 hours. No experience? No problem! vhHacks
+                                                is
+                                                beginner friendly, so anyone can join and learn a new skill!</p>
+                                        </div>
+                                        <div class="caption-button" data-animation="animated fadeInUp">
+                                            <a target="_blank" href="https://www.facebook.com/events/432399567627158/"
+                                               class="button">See the Facebook Event!</a>
+                                        </div>
+                                        <!--
+                                        <div class="caption-button" data-animation="animated fadeInUp">
+                                            <a class="button" data-toggle="collapse" data-parent="#accordion" href="#register"
+                                               aria-expanded="true">Sign up!</a>
+                                        </div>
+                                        -->
+
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="one" data-animation="animated fadeInRight">
+                                            <img src="images/vhhacksintro.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!--Feature-area-->
+        <section class="section-padding" id="learn">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                        <div class="page-title">
+                            <h2>Pick a path!</h2>
+                            <p>vhHacks is all about learning! If you haven't attended a hackathon before, pick a path
+                                below
+                                and dive into the world of hacking! More info to come!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="box">
+                            <div class="box-icon">
+                                <img src="images/frontend-v1.svg" alt="" style="height:180px">
+                            </div>
+                            <h4>Designer</h4>
+                            <p>Design the user interface for your hack.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="box">
+                            <div class="box-icon">
+                                <img src="images/backend.svg" alt="" style="height:180px">
+                            </div>
+                            <h4>Programmer</h4>
+                            <p>Write the code that makes your hack work.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="box">
+                            <div class="box-icon">
+                                <img src="images/game-v1.svg" alt="" style="height:180px">
+                            </div>
+                            <h4>Game developer</h4>
+                            <p>Create a unique game in a short period of time.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="box">
+                            <div class="box-icon">
+                                <img src="images/hardware-v1.svg" alt="" style="height:180px">
+                            </div>
+                            <h4>Hardware hacker</h4>
+                            <p>Use hardware to solve modern problems.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <div id="bubbles"></div>
+        </section>
+
+        <img src="images/fishy-18.svg" id="fish1">
+        <section class="section-padding" id="spotlight">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                        <div class="page-title">
+                            <h2>Sponsor Spotlight</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                        <div class="testimonials">
+                            <div class="testimonial">
+                                <div class="testimonial-photo">
+                                    <img src="images/avatar-small-1.png" alt="">
+                                </div>
+                                <h3>Sponsor!</h3>
+                                <p>Want to see your logo here? Reach out to us at <a
+                                        href="mailto:outreach@vhhacks.ca">outreach@vhhacks.ca</a>, or check out our
+                                    <a href="vhh-sp.pdf">sponsorship pack.</a></p>
+                            </div>
+                            <div class="testimonial">
+                                <div class="testimonial-photo">
+                                    <img src="images/avatar-small-2.png" alt="">
+                                </div>
+                                <h3>Sponsor!</h3>
+                                <p>Want to see your logo here? Reach out to us at <a
+                                        href="mailto:outreach@vhhacks.ca">outreach@vhhacks.ca</a>, or check out our
+                                    <a href="vhh-sp.pdf">sponsorship pack.</a></p>
+                            </div>
+                            <div class="testimonial">
+                                <div class="testimonial-photo">
+                                    <img src="images/avatar-small-3.png" alt="">
+                                </div>
+                                <h3>Sponsor!</h3>
+                                <p>Want to see your logo here? Reach out to us at <a
+                                        href="mailto:outreach@vhhacks.ca">outreach@vhhacks.ca</a>, or check out our
+                                    <a href="vhh-sp.pdf">sponsorship pack.</a></p>
+                            </div>
+                            <div class="testimonial">
+                                <div class="testimonial-photo">
+                                    <img src="images/avatar-small-4.png" alt="">
+                                </div>
+                                <h3>Sponsor!</h3>
+                                <p>Want to see your logo here? Reach out to us at <a
+                                        href="mailto:outreach@vhhacks.ca">outreach@vhhacks.ca</a>, or check out our
+                                    <a href="vhh-sp.pdf">sponsorship pack.</a></p>
+                            </div>
+                            <div class="testimonial">
+                                <div class="testimonial-photo">
+                                    <img src="images/avatar-small-5.png" alt="">
+                                </div>
+                                <h3>Sponsor!</h3>
+                                <p>Want to see your logo here? Reach out to us at <a
+                                        href="mailto:outreach@vhhacks.ca">outreach@vhhacks.ca</a>, or check out our
+                                    <a href="vhh-sp.pdf">sponsorship pack.</a></p>
+                            </div>
+                            <div class="testimonial">
+                                <div class="testimonial-photo">
+                                    <img src="images/avatar-small-6.png" alt="">
+                                </div>
+                                <h3>Sponsor!</h3>
+                                <p>Want to see your logo here? Reach out to us at <a
+                                        href="mailto:outreach@vhhacks.ca">outreach@vhhacks.ca</a>, or check out our
+                                    <a href="vhh-sp.pdf">sponsorship pack.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <p>Interested in becoming a sponsor? Reach out to us at <a href="mailto:outreach@vhhacks.ca">outreach@vhhacks.ca</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <img src="images/fishy-17.svg" id="fish2">
+
+        <section class="section-padding" id="faq-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                        <div class="page-title">
+                            <h2>Frequently Asked Questions</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-11 col-sm-offset-1 col-md-11">
+                        <h2 style="padding-top:30px;">General Information</h2>
+
+                        <div class="panel-group" id="accordion">
+                            <div class="panel">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"
+                                       aria-expanded="true">What is a hackathon?</a>
+                                </h4>
+                                <div id="collapse1" class="panel-collapse collapse in">
+                                    <p>A hackathon is an invention marathon. Students come together in teams to build
+                                        cool
+                                        software and hardware projects over the course of 24 hours.</p>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Who can
+                                        attend?</a>
+                                </h4>
+                                <div id="collapse2" class="panel-collapse collapse">
+                                    <p>vhHacks is open to all high school students of all skill levels. If you're older
+                                        (post-secondary or above) and have experience in computer science, you can apply
+                                        to
+                                        be a mentor.</p>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">How much does
+                                        it
+                                        cost?</a>
+                                </h4>
+                                <div id="collapse3" class="panel-collapse collapse">
+                                    <p>Nothing! vhHacks is completely free of charge at the event. However, if you are
+                                        booking a stay near the event, or taking public transport, those will cost
+                                        money.</p>
+                                </div>
+                            </div>
+
+                            <div class="panel">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Will there be
+                                        food?</a>
+                                </h4>
+                                <div id="collapse4" class="panel-collapse collapse">
+                                    <p>Yes. Food and snacks are provided throughout the event, even overnight! (We know
+                                        you
+                                        night owls get the munchies.) There are also restaurants around the venue to buy
+                                        food
+                                        and snacks, and you can always bring your own!</p>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">What if I'm a
+                                        beginner?</a>
+                                </h4>
+                                <div id="collapse5" class="panel-collapse collapse">
+                                    <p>Hackathons are <a
+                                            href="https://medium.com/tfogo/hackathons-are-for-beginners-77a9c9c0e000#.cj21niskl">very
+                                        beginner friendly.</a> Whether you're an absolute beginner, a new computer
+                                        science
+                                        student, or an experienced hacker,
+                                        you're the right fit for vhHacks. Artists, musicians, athletes, gamers, everyone
+                                        is
+                                        welcome!</p>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Where is the
+                                        event?</a>
+                                </h4>
+                                <div id="collapse6" class="panel-collapse collapse">
+                                    <p>vhHacks will be taking place in the AMS Great Hall. You can find
+                                        details about the room <a
+                                                href="https://www.ams.ubc.ca/the-nest/">here</a> and
+                                        directions to the venue <a
+                                                href="https://www.google.ca/maps/dir//AMS+Student+Nest,+University+Boulevard,+Vancouver,+BC/@49.2665688,-123.3199038,12z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x54867398c216945b:0xe9bbdd7328c09b21!2m2!1d-123.2498647!2d49.2664779!3e3">here.</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Can I get
+                                        travel
+                                        reimbursements?</a>
+                                </h4>
+                                <div id="collapse10" class="panel-collapse collapse">
+                                    <p>
+                                        Unfortunately, we cannot directly provide travel reimbursement for our
+                                        participants
+                                        at this time. But you can apply for <a href="https://grant.executebig.org">Execute
+                                        Big's Travel
+                                        Grant</a>, so you can join us without having to pay for
+                                        travel!
+                                    </p>
+                                </div>
+                            </div>
+                            <h2 style="padding-top:30px;">Teams</h2>
+                            <div class="panel">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">How big can my
+                                        team
+                                        be?</a>
+                                </h4>
+                                <div id="collapse7" class="panel-collapse collapse">
+                                    <p>
+                                        Teams are usually 2-4 people in size. Teams bigger than 4 will be split up into
+                                        smaller ones, since larger teams aren't usually the best solution for a 24 hour
+                                        event.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">What happens if
+                                        I
+                                        don't have a team?</a>
+                                </h4>
+                                <div id="collapse8" class="panel-collapse collapse">
+                                    <p>
+                                        No worries! A lot of other hackers are in the same position. vhHacks staff will
+                                        help
+                                        you find other teammates and provide you with opportunities to find others!
+                                    </p>
+                                </div>
+                            </div>
+                            <h2 style="padding-top:30px;">At the Event</h2>
+                            <div class="panel">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">What should I
+                                        bring?</a>
+                                </h4>
+                                <div id="collapse9" class="panel-collapse collapse">
+                                    <p>
+                                        Since vhHacks is a 24 hour event, prepare to stay overnight! Food will be
+                                        provided--more info to come.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 50px">
+                        <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                            <div class="page-title">
+                                <p class="text-center">Couldn't find an answer? Send your question to <a
+                                        href="mailto:contact@vhhacks.ca">contact@vhhacks.ca</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <img src="images/fishy-15.svg" id="fish3">
+        <section class="section-padding" id="benefactors">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                        <div class="page-title">
+                            <h2>Sponsors</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--sponsors start-->
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="box">
+                            <div class="box-icon">
+                                <a href="https://notion.so"><img src="images/Notion-logo-512.png"
+                                                                 style="height:175px" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="box">
+                            <div class="box-icon">
+                                <a href="https://stickermule.com"><img src="images/sticker-mule-logo-light-bg.svg"
+                                                                       style="height:175px" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--sponsors end-->
+                </div>
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <p>Interested in becoming a sponsor? Reach out to us at <a href="mailto:outreach@vhhacks.ca">outreach@vhhacks.ca</a>,
+                        or check out our
+                        <a href="vhh-sp.pdf">sponsorship pack.</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <img src="images/fishy-14.svg" id="fish4">
+        <section class="section-padding" id="partners">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                        <div class="page-title">
+                            <h2>Community Partners</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--partner start-->
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="box">
+                            <div class="box-icon">
+                                <a href="https://www.nwplus.io"><img src="images/nwplus.png"
+                                                                     style="height:175px" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="box">
+                            <div class="box-icon">
+                                <a href="https://vikingsdev.ca"><img src="images/vikingsdevlogo.png"
+                                                                     style="height:175px" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--partner end-->
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                        <div class="page-title">
+                            <h2>Get in touch with us.</h2>
+                            <p>Interested in sponsoring? <a href="mailto:outreach@vhhacks.ca">outreach@vhhacks.ca</a>
+                            </p>
+                            <p>Have a question? <a href="mailto:contact@vhhacks.ca">contact@vhhacks.ca</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-section text-center">
+            <div class="container">
+                <div class="row">
+                    <a href="https://www.instagram.com/vhhacks/" target="_blank"><i class="sicon ti-instagram"></i></a>
+                    <a href="https://www.facebook.com/events/432399567627158/" target="_blank"><i
+                            class="sicon ti-facebook"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-area relative" id="contact-page">
+            <div class="absolute footer-bg"></div>
+            <img src="images/angler.svg" id="beluga">
+            <div class="full-height footer-txt">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <p>&copy;Copyright 2018 All rights reserved. <br>Made with <i class="ti-heart"
+                                                                                          aria-hidden="true"></i>
+                                by <a href="https://github.com/inhostudios">InhoStudios</a>. <br>Built with Colid
+                                by <a href="https://colorlib.com">Colorlib</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div id="bubbles"></div>
+    </div>
+
+
+    <!--Vendor-JS-->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!--Plugin-JS-->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/scrollUp.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!--Main-active-JS-->
+    <script src="js/main.js"></script>
+    <script src="js/navbarscroll.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <!--<script src="js/daynight.js"></script>-->
 </div>
-
-
-<!--Vendor-JS-->
-<script src="js/vendor/jquery-1.12.4.min.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<!--Plugin-JS-->
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/contact-form.js"></script>
-<script src="js/jquery.parallax-1.1.3.js"></script>
-<script src="js/scrollUp.min.js"></script>
-<script src="js/magnific-popup.min.js"></script>
-<script src="js/wow.min.js"></script>
-<!--Main-active-JS-->
-<script src="js/main.js"></script>
-<script src="js/navbarscroll.js"></script>
-<script src="js/particles.js"></script>
-<script src="js/app.js"></script>
-<!--<script src="js/daynight.js"></script>-->
 </body>
 
 </html>
