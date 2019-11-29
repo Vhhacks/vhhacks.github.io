@@ -47,6 +47,13 @@
 </head>
 
 <body data-spy="scroll" data-target="#primary-menu">
+<div id="ctf" class="hide">
+        seed = 202041112
+        <br>
+        <p id="spaceImportant">code = ' . :~~^ _~ || !    H^h ^vs~/ ,\n_    /   ~h\n~ s phs ~  \n  O^ \\w ^  o_^_ ~r^c|\n" a" \'"  s _  ka^ \n ^ :|^~l~^p /e  _  `u \\e_^"  r_     _ ~\\\n\n_  .w~  ~   ae '</p>
+        <br>
+        hint: sample from random.sample(range(-1,152),153)
+</div>
 <script>
     window.onload = function () {
         var vars = {};
@@ -57,18 +64,13 @@
         if (("ctf" in vars) && (vars["ctf"] == "true")) {
             $("#hideable").empty();
             $("head").empty();
+            console.log($("#spaceImportant").text());
+            document.getElementById("spaceImportant").innerHTML = $("#spaceImportant").text().replace(/ /g, '\u00a0');
             document.getElementById("ctf").setAttribute("class", "show");
             console.log("CTF activated!")
         }
     }
 </script>
-<div id="ctf" class="hide">
-        seed = 202041112
-        <br>
-        code = ' . :~~^ _~ || !    H^h ^vs~/ ,\n_    /   ~h\n~ s phs ~  \n  O^ \\w ^  o_^_ ~r^c|\n" a" \'"  s _  ka^ \n ^ :|^~l~^p /e  _  `u \\e_^"  r_     _ ~\\\n\n_  .w~  ~   ae '
-        <br>
-        hint: sample from random.sample(range(-1,152),153)
-</div>
 <div id="hideable">
     <div class="preloader">
         <div class="sk-folding-cube">
