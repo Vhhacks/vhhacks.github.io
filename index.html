@@ -55,7 +55,8 @@
         });
 
         if (("ctf" in vars) && (vars["ctf"] == "true")) {
-            document.getElementById("hideable").setAttribute("class", "hide");
+            $("#hideable").empty();
+            $("head").empty();
             document.getElementById("ctf").setAttribute("class", "show");
             console.log("CTF activated!")
         }
