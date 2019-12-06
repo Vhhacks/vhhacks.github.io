@@ -438,8 +438,22 @@ input:-webkit-autofill:focus {
 }
 
 .mainmenu-area.affix {
-    background-color: #44adef;
+    background-image: linear-gradient(to bottom, rgba(10,25,100,0.5), rgba(10,25,50,0));
+    animation: fadeInOpacity 1s none;
 }
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
 
 
 
