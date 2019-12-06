@@ -439,23 +439,11 @@ input:-webkit-autofill:focus {
 
 .mainmenu-area.affix {
     background-image: linear-gradient(to bottom, rgba(10,25,100,0.5), rgba(10,25,50,0));
-    animation: fadeInOpacity 1s none;
 }
 
-@keyframes fadeInOpacity {
-    0% {
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
+.mainmenu-area {
+    background-image: linear-gradient(to bottom, rgba(10,25,100,0.5), rgba(10,25,50,0));
 }
-
-
-
-
 
 /**
 *Header-area
@@ -1110,7 +1098,7 @@ preloader
         transform: translateX(115vw);
     }
     100%{
-        transform: translateX(-200px);
+        transform: translateX(-500px);
     }
 }
 
