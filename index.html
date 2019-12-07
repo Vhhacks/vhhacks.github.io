@@ -47,6 +47,28 @@
 </head>
 
 <body data-spy="scroll" data-target="#primary-menu">
+<script>
+    fetch("https://api.sunrise-sunset.org/json?lat=49.266191&lng=-123.249368&date=today&formatted=0").then(response => response.json()).then(function(json){
+        var data = json['results'];
+        var sunrise = Date.parse(data['sunrise'])
+        var sunset = Date.parse(data['sunset'])
+        var now = Date.now();
+
+        if(now > sunrise || now < sunset){
+            // day
+
+        }
+        if(now > sunset || now < sunrise){
+            // night
+            $("#home-page").attr("class","header-night-area full-height relative v-center");
+            $("#gradient-bg").attr("class","night-bg");
+            $("#title-text1").attr("style","color: white;");
+            $("#title-text2").attr("style","color: white;");
+            $("#waves").attr("class", "absolute night-waves");
+        }
+
+    })
+</script>
 <div id="ctf" class="hide">
     seed = 202041112
     <br>
@@ -111,14 +133,14 @@
 
     <!--Header-area-->
     <header class="header-area full-height relative v-center" id="home-page">
-        <div class="absolute anlge-bg"></div>
+        <div id="waves" class="absolute anlge-bg"></div>
         <div class="container">
             <div class="row v-center">
                 <div class="col-xs-2 col-md-2"></div>
                 <div class="col-xs-8 col-md-8 header-text text-center">
                     <img src="images/vhhacksclear.png" style="max-height:20vh">
-                    <h2>vhHacks 2020</h2>
-                    <p>April 11 - 12<br>University of British Columbia</p>
+                    <h2 id="title-text1">vhHacks 2020</h2>
+                    <p id="title-text2">April 11 - 12<br>University of British Columbia</p>
                     <a data-toggle="collapse" data-parent="#accordion" href="#register"
                        aria-expanded="true" class="button">Mailing List</a>
                 </div>
@@ -144,7 +166,7 @@
         </div>
     </header>
 
-    <div class="sky-bg">
+    <div class="sky-bg" id="gradient-bg">
         <section class="angle-bg section-padding" id="about">
             <div class="container">
                 <div class="row">
