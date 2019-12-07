@@ -46,7 +46,7 @@
     <![endif]-->
 </head>
 
-<body data-spy="scroll" data-target="#primary-menu">
+<body data-spy="scroll" data-target="#primary-menu" >
 <script>
     fetch("https://api.sunrise-sunset.org/json?lat=49.266191&lng=-123.249368&date=today&formatted=0").then(response => response.json()).then(function(json){
         var data = json['results'];
@@ -166,7 +166,8 @@
         </div>
     </header>
 
-    <div class="sky-bg" id="gradient-bg">
+    <div class="sky-bg" id="gradient-bg" style="position:relative;">
+        <div id="bubbles"></div>
         <section class="angle-bg section-padding" id="about">
             <div class="container">
                 <div class="row">
@@ -633,7 +634,6 @@
                 </div>
             </div>
         </footer>
-        <div id="bubbles"></div>
     </div>
 
 
