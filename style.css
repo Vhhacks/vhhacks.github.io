@@ -244,8 +244,8 @@ input:-webkit-autofill:focus {
 .overlay:before,
 .night-bg {
     background: #75cbe7;
-    background: -webkit-gradient(linear, left top, left bottom, from(#004080), to(#000000));
-    background: linear-gradient(to bottom, #004080 0%, #000000 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#002040), to(#000000));
+    background: linear-gradient(to bottom, #002040 0%, #000000 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
     color: #ffffff;
     z-index:0;
