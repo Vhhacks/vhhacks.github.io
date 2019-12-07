@@ -131,7 +131,7 @@ input:-webkit-autofill:focus {
 }
 
 #bubbles {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
     left: 0px;
@@ -239,6 +239,20 @@ input:-webkit-autofill:focus {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
     color: #ffffff;
     z-index:0;
+}
+
+.overlay:before,
+.night-bg {
+    background: #75cbe7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#002040), to(#000000));
+    background: linear-gradient(to bottom, #002040 0%, #000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
+    color: #ffffff;
+    z-index:0;
+}
+
+.night-mode-font{
+    color: #ffffff;
 }
 
 .btn-bg {
@@ -439,12 +453,22 @@ input:-webkit-autofill:focus {
     z-index:11;
 }
 
+.client-area,
+.header-night-area {
+    background: url('images/night-bg.svg') no-repeat scroll center bottom / cover;
+    z-index:11;
+}
+
 .header-skyline{
     background: url('images/skyline.png') no-repeat scroll center bottom / 100% auto;
 }
 
 .anlge-bg {
     background: url('images/vancouver.png') no-repeat scroll center bottom / 100% auto;
+}
+
+.night-waves {
+    background: url('images/night-waves.png') no-repeat scroll center bottom / 100% auto;
 }
 
 .overlay {
