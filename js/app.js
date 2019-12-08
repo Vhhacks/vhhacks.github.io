@@ -41,8 +41,8 @@ particlesJS('bubbles',
         }
       },
       "opacity": {
-        "value": 0.2,
-        "random": false,
+        "value": 0.1,
+        "random": true,
         "anim": {
           "enable": false,
           "speed": 0.1,
@@ -51,7 +51,7 @@ particlesJS('bubbles',
         }
       },
       "size": {
-        "value": 20,
+        "value": 10,
         "random": true,
         "anim": {
           "enable": false,
@@ -62,9 +62,9 @@ particlesJS('bubbles',
       },
       "line_linked": {
         "enable": false,
-        "distance": 150,
+        "distance": 500,
         "color": "#ffffff",
-        "opacity": 0.4,
+        "opacity": 0.5,
         "width": 1
       },
       "move": {

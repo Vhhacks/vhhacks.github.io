@@ -136,8 +136,9 @@ input:-webkit-autofill:focus {
     height: 100vh;
     left: 0px;
     top: 0px;
-    z-index: 5;
+    z-index: -1;
 }
+
 .full-height {
     width: 100%;
     height: 100vh;
@@ -473,9 +474,6 @@ input:-webkit-autofill:focus {
     background: url('images/night-waves.png') no-repeat scroll center bottom / 100% auto;
 }
 
-.overlay {
-    position: relative;
-}
 
 .overlay:before {
     content: "";
@@ -698,15 +696,6 @@ input:-webkit-autofill:focus {
     bottom: 0;
 }
 
-/***
-*Testimonial-Page
-***/
-
-.testimonial-area {
-    background: url('images/parallax-7.jpg') no-repeat scroll center center / cover;
-    position: relative;
-    color: #ffffff;
-}
 
 .testimonial-area:before {
     opacity: 0.9
@@ -741,14 +730,6 @@ input:-webkit-autofill:focus {
     text-align: center;
 }
 
-
-/***
-*Price-area
-***/
-
-.price-area {
-    background: url('images/parallax-6.jpg') no-repeat scroll center center / cover
-}
 
 .price-table h3 {
     margin-bottom: 30px;
@@ -1056,6 +1037,7 @@ preloader
 #fish1{
     width: 200px;
     height: 200px;
+    overflow: hidden;
     animation: swimRight 30s infinite;
 }
 
@@ -1083,6 +1065,22 @@ preloader
     height: 200px;
     animation: swimRight 35s infinite;
 }
+
+.diver{
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+    width: 200px;
+
+}
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
 
 @keyframes swimRight {
     0% {
@@ -1174,4 +1172,25 @@ preloader
 
 .show{
     display:block;
+}
+body {
+    overflow: overlay;
+    overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background: transparent;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(256,256,256,0.25);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(256,256,256,0.5);
+    border-radius: 10px;
 }
