@@ -50,23 +50,23 @@
 <script>
     fetch("https://api.sunrise-sunset.org/json?lat=49.266191&lng=-123.249368&date=today&formatted=0").then(response => response.json()).then(function(json){
         var data = json['results'];
-        var sunrise = Date.parse(data['sunrise'])
-        var sunset = Date.parse(data['sunset'])
+        var sunrise = Date.parse(data['sunrise']);
+        var sunset = Date.parse(data['sunset']);
         var now = Date.now();
-
-        if(now > sunrise || now < sunset){
+        console.log(sunrise);
+        console.log(sunset);
+        if(now > sunrise && now < sunset){
             // day
-
-        }
-        if(now > sunset || now < sunrise){
+            console.log("day");
+        }else{
             // night
+            console.log("night");
             $("#home-page").attr("class","header-night-area full-height relative v-center");
             $("#gradient-bg").attr("class","night-bg");
             $("#title-text1").attr("style","color: white;");
             $("#title-text2").attr("style","color: white;");
             $("#waves").attr("class", "absolute night-waves");
         }
-
     })
 </script>
 <div id="ctf" class="hide">
@@ -167,7 +167,6 @@
     </header>
 
     <div class="sky-bg" id="gradient-bg" style="position:relative;">
-        <div id="bubbles"></div>
         <section class="angle-bg section-padding" id="about">
             <div class="container">
                 <div class="row">
@@ -620,6 +619,7 @@
         </section>
 
         <footer class="footer-area relative" id="contact-page">
+            <div id="bubbles"></div>
             <div class="absolute footer-bg"></div>
             <img src="images/angler.svg" id="beluga">
             <div class="full-height footer-txt">
@@ -653,7 +653,6 @@
     <script src="js/navbarscroll.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
-    <!--<script src="js/daynight.js"></script>-->
 </div>
 </body>
 
