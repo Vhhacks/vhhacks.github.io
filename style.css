@@ -106,7 +106,7 @@ input:-webkit-autofill:focus {
 **/
 
 /*beluga*/
-#beluga{
+#angler{
     position:absolute;
     width: 20vw;
     height: 20vw;
@@ -471,7 +471,7 @@ input:-webkit-autofill:focus {
 }
 
 .night-waves {
-    background: url('images/night-waves.png') no-repeat scroll center bottom / 100% auto;
+    background: url('images/night-water.svg') no-repeat scroll center bottom / 100% auto;
 }
 
 
@@ -885,8 +885,7 @@ input:-webkit-autofill:focus {
 }
 
 .footer-bg {
-    background: url('images/Sea_Floor.svg') no-repeat scroll center bottom / 100% auto;
-    z-index:11 !important;
+    background: url('images/Sea_Floor.svg') no-repeat scroll center bottom / 100% 100%;
 }
 
 .footer-top {
