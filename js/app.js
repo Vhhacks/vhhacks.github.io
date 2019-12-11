@@ -16,7 +16,7 @@ particlesJS('bubbles',
   {
     "particles": {
       "number": {
-        "value": 25,
+        "value": 30,
         "density": {
           "enable": false,
           "value_area": 800
