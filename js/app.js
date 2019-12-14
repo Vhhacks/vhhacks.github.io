@@ -16,7 +16,7 @@ particlesJS('bubbles',
   {
     "particles": {
       "number": {
-        "value": 30,
+        "value": 10,
         "density": {
           "enable": false,
           "value_area": 800
@@ -51,7 +51,7 @@ particlesJS('bubbles',
         }
       },
       "size": {
-        "value": 10,
+        "value": 20,
         "random": true,
         "anim": {
           "enable": false,
@@ -85,7 +85,7 @@ particlesJS('bubbles',
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": true,
+          "enable": false,
           "mode": "repulse"
         },
         "onclick": {
