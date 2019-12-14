@@ -232,30 +232,6 @@ input:-webkit-autofill:focus {
 *Default Background Class
 **/
 
-.overlay:before,
-.sky-bg {
-    background: #75cbe7;
-    background: -webkit-gradient(linear, left top, left bottom, from(#007eff), to(#000913));
-    background: linear-gradient(to bottom, #007eff 0%, #000913 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
-    color: #ffffff;
-    z-index:0;
-}
-
-.overlay:before,
-.night-bg {
-    background: #75cbe7;
-    background: -webkit-gradient(linear, left top, left bottom, from(#002040), to(#000000));
-    background: linear-gradient(to bottom, #002040 0%, #000000 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
-    color: #ffffff;
-    z-index:0;
-}
-
-.night-mode-font{
-    color: #ffffff;
-}
-
 .btn-bg {
     background: #75cbe7;
     background: -webkit-gradient(linear, left top, left bottom, from(#007eff), to(#f2fefe));
@@ -449,30 +425,6 @@ input:-webkit-autofill:focus {
 /**
 *Header-area
 **/
-
-.client-area,
-.header-area {
-    background: #0e2946 url('images/skylines/vhhacksbackgroundday.png') no-repeat scroll center bottom / cover;
-    z-index:11;
-}
-
-.client-area,
-.header-night-area {
-    background: url('images/skylines/night-bg.svg') no-repeat scroll center bottom / cover;
-    z-index:11;
-}
-
-.header-skyline{
-    background: url('images/skylines/skyline.png') no-repeat scroll center bottom / 100% auto;
-}
-
-.anlge-bg {
-    background: url('images/skylines/vancouver.png') no-repeat scroll center bottom / 100% auto;
-}
-
-.night-waves {
-    background: url('images/skylines/night-water.svg') no-repeat scroll center bottom / 100% auto;
-}
 
 *{
     /*border-color: red;*/
@@ -1198,3 +1150,83 @@ body {
     background: rgba(256,256,256,0.5);
     border-radius: 10px;
 }
+
+.text-white{
+    color: #ffffff;
+}
+
+/*Day mode START*/
+
+.client-area,
+.header-area {
+    background: #0e2946 url('images/skylines/day/vhhacksbackgroundday.png') no-repeat scroll center bottom / cover;
+    z-index:11;
+}
+
+.overlay:before,
+.sky-bg {
+    background: #75cbe7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#007eff), to(#000913));
+    background: linear-gradient(to bottom, #007eff 0%, #000913 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
+    color: #ffffff;
+    z-index:0;
+}
+
+.header-skyline{
+    background: url('images/skylines/day/skyline.png') no-repeat scroll center bottom / 100% auto;
+}
+
+.sky-waves {
+    background: url('images/skylines/day/vancouver.png') no-repeat scroll center bottom / 100% auto;
+}
+
+/*Day mode END*/
+
+/*Night mode START*/
+
+.client-area,
+.header-night-area {
+    background: url('images/skylines/night/night-bg.svg') no-repeat scroll center bottom / cover;
+    z-index:11;
+}
+
+.overlay:before,
+.night-bg {
+    background: #75cbe7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#002040), to(#000000));
+    background: linear-gradient(to bottom, #002040 0%, #000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
+    color: #ffffff;
+    z-index:0;
+}
+
+.night-waves {
+    background: url('images/skylines/night/night-water.svg') no-repeat scroll center bottom / 100% auto;
+}
+
+/*Night mode END*/
+
+/*Nautical mode START*/
+
+.client-area,
+.header-nautical-area {
+    background: url('images/skylines/nautical/nautical-bg.svg') no-repeat scroll center bottom / cover;
+    z-index:11;
+}
+
+.overlay:before,
+.nautical-bg {
+    background: #75cbe7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#1888C0), to(#000000));
+    background: linear-gradient(to bottom, #1888C0 0%, #000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
+    color: #ffffff;
+    z-index:0;
+}
+
+.nautical-waves {
+    background: url('images/skylines/nautical/nautical-waves.svg') no-repeat scroll center bottom / 100% auto;
+}
+
+/*Nautical mode END*/

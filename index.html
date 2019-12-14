@@ -64,6 +64,11 @@
         }else if(now > nautical[0] && now < nautical[1]){
             //nautical twilight
             console.log("nautical twilight");
+            $("#home-page").attr("class", "header-nautical-area full-height relative v-center");
+            $("#gradient-bg").attr("class", "nautical-bg");
+            $("#title-text1").attr("style", "color: white;");
+            $("#title-text2").attr("style", "color: white;");
+            $("#waves").attr("class", "absolute nautical-waves");
         }else if(now > astro[0] && now < astro[1]){
             //astronomical twilight
             console.log("astronomical twilight");
@@ -145,7 +150,7 @@
 
     <!--Header-area-->
     <header class="header-area full-height relative v-center" id="home-page" style="border: none">
-        <div id="waves" class="absolute anlge-bg"></div>
+        <div id="waves" class="absolute sky-waves"></div>
         <div class="container">
             <div class="row v-center">
                 <div class="col-xs-2 col-md-2"></div>
