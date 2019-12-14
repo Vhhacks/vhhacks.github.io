@@ -50,16 +50,28 @@
 <script>
     fetch("https://api.sunrise-sunset.org/json?lat=49.266191&lng=-123.249368&date=today&formatted=0").then(response => response.json()).then(function (json) {
         var data = json['results'];
-        var sunrise = Date.parse(data['sunrise']);
-        var sunset = Date.parse(data['sunset']);
+        var sunrise = new Date(data['sunrise']);
+        var sunset = new Date(data['sunset']);
+        var civil = [new Date(data['civil_twilight_begin']), new Date(data['civil_twilight_end'])];
+        var nautical = [new Date(data['nautical_twilight_begin']), new Date(data['nautical_twilight_end'])];
+        var astro = [new Date(data['astronomical_twilight_begin']), new Date(data['astronomical_twilight_end'])];
+        console.log(sunrise)
         var now = Date.now();
-        console.log(sunrise);
-        console.log(sunset);
-        if (now > sunrise && now < sunset) {
+
+        if(now > civil[0] && now < civil[1]){
+            //civil twilight
+            console.log("civil twilight");
+        }else if(now > nautical[0] && now < nautical[1]){
+            //nautical twilight
+            console.log("nautical twilight");
+        }else if(now > astro[0] && now < astro[1]){
+            //astronomical twilight
+            console.log("astronomical twilight");
+        }else if (now > sunrise && now < sunset) {
             // day
             console.log("day");
         } else {
-            // night
+            // sunset
             console.log("night");
             $("#home-page").attr("class", "header-night-area full-height relative v-center");
             $("#gradient-bg").attr("class", "night-bg");
@@ -213,7 +225,7 @@
 
         </section>
 
-        <img src="images/fishy-18.svg" id="fish1">
+        <img src="images/swimming-fish/fishy-18.svg" id="fish1">
         <!--Feature-area-->
         <section class="section-padding" id="learn">
             <div class="container">
@@ -231,7 +243,7 @@
                     <div class="col-xs-12 col-sm-6">
                         <div class="box">
                             <div class="box-icon">
-                                <img src="images/frontend-v1.svg" alt="" style="height:180px">
+                                <img src="images/hacker-paths/frontend-v1.svg" alt="" style="height:180px">
                             </div>
                             <h4>Designer</h4>
                             <p>Design the user interface for your hack.</p>
@@ -240,7 +252,7 @@
                     <div class="col-xs-12 col-sm-6">
                         <div class="box">
                             <div class="box-icon">
-                                <img src="images/backend.svg" alt="" style="height:180px">
+                                <img src="images/hacker-paths/backend.svg" alt="" style="height:180px">
                             </div>
                             <h4>Programmer</h4>
                             <p>Write the code that makes your hack work.</p>
@@ -251,7 +263,7 @@
                     <div class="col-xs-12 col-sm-6">
                         <div class="box">
                             <div class="box-icon">
-                                <img src="images/game-v1.svg" alt="" style="height:180px">
+                                <img src="images/hacker-paths/game-v1.svg" alt="" style="height:180px">
                             </div>
                             <h4>Game developer</h4>
                             <p>Create a unique game in a short period of time.</p>
@@ -260,7 +272,7 @@
                     <div class="col-xs-12 col-sm-6">
                         <div class="box">
                             <div class="box-icon">
-                                <img src="images/hardware-v1.svg" alt="" style="height:180px">
+                                <img src="images/hacker-paths/hardware-v1.svg" alt="" style="height:180px">
                             </div>
                             <h4>Hardware hacker</h4>
                             <p>Use hardware to solve modern problems.</p>
@@ -345,7 +357,7 @@
                 </div>
             </div>
         </section-->
-        <img src="images/fishy-17.svg" id="fish2">
+        <img src="images/swimming-fish/fishy-17.svg" id="fish2">
 
         <section class="section-padding" id="faq-page">
             <div class="container">
@@ -513,7 +525,7 @@
             </div>
         </section>
 
-        <img src="images/fishy-15.svg" id="fish3">
+        <img src="images/swimming-fish/fishy-15.svg" id="fish3">
         <img src="images/diver.svg" class="diver">
         <section class="section-padding" id="contributors">
             <div class="container">
@@ -525,11 +537,11 @@
                     </div>
                 </div>
                 <div class="row">
-                    <!--sponsors start-->
+                    <!--sponsors-and-partners start-->
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="box">
                             <div class="box-icon">
-                                <a href="https://notion.so"><img src="images/Notion-logo-512.png"
+                                <a href="https://notion.so"><img src="images/sponsors-and-partners/Notion-logo-512.png"
                                                                  style="height:175px" alt=""></a>
                             </div>
                         </div>
@@ -537,7 +549,7 @@
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="box">
                             <div class="box-icon">
-                                <a href="https://stickermule.com"><img src="images/sticker-mule-logo-light-bg.svg"
+                                <a href="https://stickermule.com"><img src="images/sponsors-and-partners/sticker-mule-logo-light-bg.svg"
                                                                        style="height:175px" alt=""></a>
                             </div>
                         </div>
@@ -545,12 +557,12 @@
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="box">
                             <div class="box-icon">
-                                <a href="https://balsamiq.com/"><img src="images/balsamiq-logo-screen.svg"
+                                <a href="https://balsamiq.com/"><img src="images/sponsors-and-partners/balsamiq-logo-screen.svg"
                                                                      style="height:175px" alt=""></a>
                             </div>
                         </div>
                     </div>
-                    <!--sponsors end-->
+                    <!--sponsors-and-partners end-->
                 </div>
                 <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
                     <p>Interested in becoming a sponsor? Reach out to us at <a href="mailto:outreach@vhhacks.ca">outreach@vhhacks.ca</a>,
@@ -561,7 +573,7 @@
             </div>
         </section>
 
-        <img src="images/fishy-14.svg" id="fish4">
+        <img src="images/swimming-fish/fishy-14.svg" id="fish4">
         <section class="section-padding" id="partners">
             <div class="container">
                 <div class="row">
@@ -577,7 +589,7 @@
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="box">
                             <div class="box-icon">
-                                <a href="https://www.nwplus.io"><img src="images/nwplus.png"
+                                <a href="https://www.nwplus.io"><img src="images/sponsors-and-partners/nwplus.png"
                                                                      style="height:175px" alt=""></a>
                             </div>
                         </div>
@@ -585,7 +597,7 @@
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="box">
                             <div class="box-icon">
-                                <a href="https://vikingsdev.ca"><img src="images/vikingsdevlogo.png"
+                                <a href="https://vikingsdev.ca"><img src="images/sponsors-and-partners/vikingsdevlogo.png"
                                                                      style="height:175px" alt=""></a>
                             </div>
                         </div>
