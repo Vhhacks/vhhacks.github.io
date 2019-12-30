@@ -64,7 +64,7 @@
         }else if(now > nautical[0] && now < nautical[1]){
             //nautical twilight
             console.log("nautical twilight");
-            $("#home-page").attr("class", "header-nautical-area full-height relative v-center");
+            $("#home-page").attr("class", "header-nautical-area parallax full-height relative v-center");
             $("#gradient-bg").attr("class", "nautical-bg");
             $("#title-text1").attr("style", "color: white;");
             $("#title-text2").attr("style", "color: white;");
@@ -78,12 +78,17 @@
         } else {
             // sunset
             console.log("night");
-            $("#home-page").attr("class", "header-night-area full-height relative v-center");
+            $("#home-page").attr("class", "header-night-area parallax full-height relative v-center");
             $("#gradient-bg").attr("class", "night-bg");
             $("#title-text1").attr("style", "color: white;");
             $("#title-text2").attr("style", "color: white;");
             $("#waves").attr("class", "absolute night-waves");
         }
+        $("#home-page").attr("class", "header-nautical-area parallax full-height relative v-center");
+        $("#gradient-bg").attr("class", "nautical-bg");
+        $("#title-text1").attr("style", "color: white;");
+        $("#title-text2").attr("style", "color: white;");
+        $("#waves").attr("class", "absolute nautical-waves");
     })
 </script>
 <div id="ctf" class="hide">
@@ -184,7 +189,7 @@
 
     </header>
     <div class="sky-bg" id="gradient-bg" style="border: none">
-        <div id="bubbles"></div>
+<!--        <div id="bubbles"></div>-->
         <section class="angle-bg section-padding" id="about">
             <div class="container">
                 <div class="row">
