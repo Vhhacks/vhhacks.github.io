@@ -1227,6 +1227,17 @@ body {
 
 .nautical-waves {
     background: url('images/skylines/nautical/nautical-waves.svg') no-repeat scroll center bottom / 100% auto;
+    transform: translateY(4vw);
 }
 
 /*Nautical mode END*/
+
+.parallax {
+    width: 100vw;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
