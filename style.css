@@ -320,8 +320,6 @@ input:-webkit-autofill:focus {
 }
 
 .box:hover {
-    -webkit-box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px)
 }
@@ -336,15 +334,11 @@ input:-webkit-autofill:focus {
 }
 
 .box .box-icon img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 
 .box:hover .box-icon img {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0)
 }
 
 /**
