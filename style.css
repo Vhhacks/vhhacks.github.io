@@ -241,6 +241,22 @@ input:-webkit-autofill:focus {
 *Default Button
 **/
 
+@media screen and (max-width: 1207px) {
+    .mobile-unfriendly {
+        display: none;
+    !important;
+    }
+
+    .mobile-friendly {
+        display: block;
+    !important;
+    }
+
+    .mobile-friendly-col {
+        display: flex; !important;
+    }
+}
+
 .button {
     display: inline-block;
     padding: 8px 30px;
