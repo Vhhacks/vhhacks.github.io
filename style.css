@@ -106,7 +106,7 @@ input:-webkit-autofill:focus {
 **/
 
 /*beluga*/
-#beluga{
+#angler{
     position:absolute;
     width: 20vw;
     height: 20vw;
@@ -131,13 +131,14 @@ input:-webkit-autofill:focus {
 }
 
 #bubbles {
-    position: absolute;
+    position: fixed;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     left: 0px;
     top: 0px;
-    z-index: 5;
+    z-index: 1;
 }
+
 .full-height {
     width: 100%;
     height: 100vh;
@@ -231,30 +232,6 @@ input:-webkit-autofill:focus {
 *Default Background Class
 **/
 
-.overlay:before,
-.sky-bg {
-    background: #75cbe7;
-    background: -webkit-gradient(linear, left top, left bottom, from(#007eff), to(#000913));
-    background: linear-gradient(to bottom, #007eff 0%, #000913 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
-    color: #ffffff;
-    z-index:0;
-}
-
-.overlay:before,
-.night-bg {
-    background: #75cbe7;
-    background: -webkit-gradient(linear, left top, left bottom, from(#002040), to(#000000));
-    background: linear-gradient(to bottom, #002040 0%, #000000 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
-    color: #ffffff;
-    z-index:0;
-}
-
-.night-mode-font{
-    color: #ffffff;
-}
-
 .btn-bg {
     background: #75cbe7;
     background: -webkit-gradient(linear, left top, left bottom, from(#007eff), to(#f2fefe));
@@ -343,8 +320,6 @@ input:-webkit-autofill:focus {
 }
 
 .box:hover {
-    -webkit-box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px)
 }
@@ -359,15 +334,11 @@ input:-webkit-autofill:focus {
 }
 
 .box .box-icon img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 
 .box:hover .box-icon img {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0)
 }
 
 /**
@@ -438,41 +409,21 @@ input:-webkit-autofill:focus {
 }
 
 .mainmenu-area.affix {
-    background-color: #44adef;
+    background-image: linear-gradient(to bottom, rgba(10,25,100,0.5), rgba(10,25,50,0));
 }
 
-
+.mainmenu-area {
+    background-image: linear-gradient(to bottom, rgba(10,25,100,0.5), rgba(10,25,50,0));
+}
 
 /**
 *Header-area
 **/
 
-.client-area,
-.header-area {
-    background: #0e2946 url('images/vhhacksbackgroundday.png') no-repeat scroll center bottom / cover;
-    z-index:11;
-}
-
-.client-area,
-.header-night-area {
-    background: url('images/night-bg.svg') no-repeat scroll center bottom / cover;
-    z-index:11;
-}
-
-.header-skyline{
-    background: url('images/skyline.png') no-repeat scroll center bottom / 100% auto;
-}
-
-.anlge-bg {
-    background: url('images/vancouver.png') no-repeat scroll center bottom / 100% auto;
-}
-
-.night-waves {
-    background: url('images/night-waves.png') no-repeat scroll center bottom / 100% auto;
-}
-
-.overlay {
-    position: relative;
+*{
+    /*border-color: red;*/
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
 }
 
 .overlay:before {
@@ -696,15 +647,6 @@ input:-webkit-autofill:focus {
     bottom: 0;
 }
 
-/***
-*Testimonial-Page
-***/
-
-.testimonial-area {
-    background: url('images/parallax-7.jpg') no-repeat scroll center center / cover;
-    position: relative;
-    color: #ffffff;
-}
 
 .testimonial-area:before {
     opacity: 0.9
@@ -739,14 +681,6 @@ input:-webkit-autofill:focus {
     text-align: center;
 }
 
-
-/***
-*Price-area
-***/
-
-.price-area {
-    background: url('images/parallax-6.jpg') no-repeat scroll center center / cover
-}
 
 .price-table h3 {
     margin-bottom: 30px;
@@ -902,8 +836,7 @@ input:-webkit-autofill:focus {
 }
 
 .footer-bg {
-    background: url('images/Sea_Floor.svg') no-repeat scroll center bottom / 100% auto;
-    z-index:11 !important;
+    background: url('images/website-decor/Sea_Floor.svg') no-repeat scroll center bottom / 100% 100%;
 }
 
 .footer-top {
@@ -1054,6 +987,7 @@ preloader
 #fish1{
     width: 200px;
     height: 200px;
+    overflow: hidden;
     animation: swimRight 30s infinite;
 }
 
@@ -1082,6 +1016,22 @@ preloader
     animation: swimRight 35s infinite;
 }
 
+.diver{
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+    width: 200px;
+
+}
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+
 @keyframes swimRight {
     0% {
         transform: translateX(-200px) scaleX(-1);
@@ -1096,7 +1046,7 @@ preloader
         transform: translateX(115vw);
     }
     100%{
-        transform: translateX(-200px);
+        transform: translateX(-500px);
     }
 }
 
@@ -1680,4 +1630,117 @@ preloader
 .ml-auto,
 .mx-auto {
     margin-left: auto !important;
+}
+  
+body {
+    overflow: overlay;
+    overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background: transparent;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(256,256,256,0.25);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(256,256,256,0.5);
+    border-radius: 10px;
+}
+
+.text-white{
+    color: #ffffff;
+}
+
+/*Day mode START*/
+
+.client-area,
+.header-area {
+    background: #0e2946 url('images/skylines/day/vhhacksbackgroundday.png') no-repeat scroll center bottom / cover;
+    z-index:11;
+}
+
+.overlay:before,
+.sky-bg {
+    background: #75cbe7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#007eff), to(#000913));
+    background: linear-gradient(to bottom, #007eff 0%, #000913 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
+    color: #ffffff;
+    z-index:0;
+}
+
+.header-skyline{
+    background: url('images/skylines/day/skyline.png') no-repeat scroll center bottom / 100% auto;
+}
+
+.sky-waves {
+    background: url('images/skylines/day/vancouver.png') no-repeat scroll center bottom / 100% auto;
+}
+
+/*Day mode END*/
+
+/*Night mode START*/
+
+.client-area,
+.header-night-area {
+    background: url('images/skylines/night/night-bg.svg') no-repeat scroll center bottom / cover;
+    z-index:11;
+}
+
+.overlay:before,
+.night-bg {
+    background: #75cbe7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#002040), to(#000000));
+    background: linear-gradient(to bottom, #002040 0%, #000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
+    color: #ffffff;
+    z-index:0;
+}
+
+.night-waves {
+    background: url('images/skylines/night/night-water.svg') no-repeat scroll center bottom / 100% auto;
+}
+
+/*Night mode END*/
+
+/*Nautical mode START*/
+
+.client-area,
+.header-nautical-area {
+    background: url('images/skylines/nautical/nautical-bg.svg') no-repeat scroll center bottom / cover;
+    z-index:11;
+}
+
+.overlay:before,
+.nautical-bg {
+    background: #75cbe7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#1888C0), to(#000000));
+    background: linear-gradient(to bottom, #1888C0 0%, #000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
+    color: #ffffff;
+    z-index:0;
+}
+
+.nautical-waves {
+    background: url('images/skylines/nautical/nautical-waves.svg') no-repeat scroll center bottom / 100% auto;
+    transform: translateY(4vw);
+}
+
+/*Nautical mode END*/
+
+.parallax {
+    width: 100vw;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

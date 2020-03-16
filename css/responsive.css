@@ -63,7 +63,7 @@
         background-color: #ffffff;
     }
     .mainmenu-area #primary-menu {
-        background-color: #138FC2;
+        background-image: linear-gradient(to bottom, rgba(10,25,100,0), rgba(25, 65, 128, 0.5));
     }
     .mainmenu-area #primary-menu ul {
         overflow-y: auto;
@@ -97,7 +97,7 @@
     .mainmenu-area .logo {
         margin-left: 15px;
     }
-    #beluga{
+    #angler{
         width: 60vw;
         height:60vw;
         transform: scaleX(-1) translateX(0);
