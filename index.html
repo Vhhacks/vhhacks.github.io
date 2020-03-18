@@ -29,7 +29,8 @@
     <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- Plugin-CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/themify-icons.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -46,7 +47,7 @@
     <![endif]-->
 </head>
 
-<body data-spy="scroll" data-target="#primary-menu">
+<body class=sky-bg" data-spy="scroll" data-target="#primary-menu" style="background: dodgerblue;">
 <script>
     fetch("https://api.sunrise-sunset.org/json?lat=49.266191&lng=-123.249368&date=today&formatted=0").then(response => response.json()).then(function (json) {
         var data = json['results'];
@@ -128,34 +129,57 @@
     </div>
     <!--Mainmenu-area-->
     <div class="mainmenu-area" data-spy="affix" data-offset-top="100" id="navbar">
-        <div class="px-3 py-3" style="background-color: coral; color: white">
-            <img class="px-3 py-1" src="images/warning.svg" style="height: 4vh"> vhHacks has been postponed indefinitely due to COVID-19. Read our update <u><a href="covid19.html">here</a></u>
+        <div class="px-3 py-3 collapse show" id="collapseCovidWarning" style="background-color: coral; color: white">
+            <div class="row">
+                <div class="col-sm-auto">
+                    <img class="px-3 py-1" src="images/warning.svg" style="height: 4vh">
+                </div>
+                <div class="col-lg-10">
+                    vhHacks has been postponed indefinitely due to COVID-19. Read our update <u><a href="covid19.html">here</a></u>
+                </div>
+                <div class="col px-5" style="text-align: right">
+                    <a data-toggle="collapse" href="#collapseCovidWarning" role="button" aria-expanded="false"
+                       aria-controls="collapseCovidWarning"><img class="px-3 py-1" src="images/close-icon.svg"
+                                                                 style="height: 2vh"></a>
+                </div>
+            </div>
         </div>
-        <div class="container">
+        <br>
+        <nav class="navbar navbar-expand-lg px-5">
             <!--Logo-->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-menu">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+            <div class="v-center">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primary-menu"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <a href="#home-page" class="navbar-brand logo">
-                    <img src="images/logos/homeicon.png" class="d-inline-block" style="max-height:32px">
+                <a href="#home-page" class="">
+                    <img src="images/logos/homeicon.png" class="d-inline-block"
+                         style="max-height:32px; align-self: center">
                 </a>
             </div>
-            <!--Logo/-->
-            <nav class="collapse navbar-collapse" id="primary-menu">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#learn">Learn</a></li>
-                    <li><a href="#faq-page">FAQ</a></li>
-                    <li><a href="#contributors">Sponsors</a></li>
-                    <li><a href="#contact">Contact</a></li>
+
+            <div class="collapse navbar-collapse flex-grow-1 text-right">
+                <ul class="navbar-nav ml-auto flex-nowrap">
+                    <li class="nav-item active px-4">
+                        <a href="#learn" class="nav-link">Learn</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a href="#faq-page" class="nav-link">FAQ</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a href="#contributors" class="nav-link">Sponsors</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+
+        </nav>
     </div>
 
 </div>
+
     <!--Mainmenu-area/-->
 
     <!--Header-area-->
@@ -168,22 +192,23 @@
                     <img src="images/logos/vhhacksclear.png" style="max-height:20vh">
                     <h2 id="title-text1">vhHacks 2020</h2>
                     <p id="title-text2">University of British Columbia</p>
+                    <a class="button" href="covid19.html">Read our COVID-19 Statement </a>
                     <!--<a data-toggle="collapse" data-parent="#accordion" href="#register"
                        aria-expanded="true" class="button">Sign me up!</a>-->
-                    <a class="typeform-share button" href="https://frankhui.typeform.com/to/guawaU" data-mode="popup" target="_blank">Sign me up! </a>
-                    <script> (
-                        function() {
-                            var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/";
-                            if(!gi.call(d,id)){
-                                js=ce.call(d,"script");
-                                js.id=id;
-                                js.src=b+"embed.js";
-                                q=gt.call(d,"script")[0];
-                                q.parentNode.insertBefore(js,q);
-                                document.getElementById("navbar").style.zIndex = "10000";
-                            }
-                        })()
-                    </script>
+<!--                    <a class="typeform-share button" href="https://frankhui.typeform.com/to/guawaU" data-mode="popup" target="_blank">Sign me up! </a>-->
+<!--                    <script> (-->
+<!--                        function() {-->
+<!--                            var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/";-->
+<!--                            if(!gi.call(d,id)){-->
+<!--                                js=ce.call(d,"script");-->
+<!--                                js.id=id;-->
+<!--                                js.src=b+"embed.js";-->
+<!--                                q=gt.call(d,"script")[0];-->
+<!--                                q.parentNode.insertBefore(js,q);-->
+<!--                                document.getElementById("navbar").style.zIndex = "10000";-->
+<!--                            }-->
+<!--                        })()-->
+<!--                    </script>-->
                 </div>
                 <div class="col-xs-2 col-md-2"></div>
             </div>
@@ -193,13 +218,13 @@
                 <div class="container-fluid">
                     <div id="accordion">
                         <div id="register" class="panel-collapse collapse">
-                            <!--<div class="container" style="padding-bottom: 15vh; padding-top: 8vh; border-radius:150px;">
+                            <div class="container" style="padding-bottom: 15vh; padding-top: 8vh; border-radius:150px;">
                                 <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
                                 <iframe class="airtable-embed"
                                         src="https://airtable.com/embed/shr61FjcsorqHvqtl?backgroundColor=cyan"
                                         frameborder="0" onmousewheel="" width="100%"
                                         style="background: transparent; height: 75vh;"></iframe>
-                            </div>-->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -259,7 +284,7 @@
         <!--Feature-area-->
         <section class="section-padding" id="learn">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
                         <div class="page-title">
                             <h2>Pick a path!</h2>
@@ -391,15 +416,13 @@
 
         <section class="section-padding" id="faq-page">
             <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                <div class="row  justify-content-center">
+                    <div class="col text-center">
                         <div class="page-title">
                             <h2>Frequently Asked Questions</h2>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-11 col-sm-offset-1 col-md-11">
                         <h2 style="padding-top:30px;">General Information</h2>
 
                         <div class="panel-group" id="accordion">
@@ -542,13 +565,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row" style="padding-top: 50px">
-                        <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                            <div class="page-title">
-                                <p class="text-center">Couldn't find an answer? Send your question to <a
-                                        href="mailto:contact@vhhacks.ca">contact@vhhacks.ca</a></p>
-                            </div>
+                <div class="row justify-content-center" style="padding-top: 50px">
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                        <div class="page-title">
+                            <p class="text-center">Couldn't find an answer? Send your question to <a
+                                    href="mailto:contact@vhhacks.ca">contact@vhhacks.ca</a></p>
                         </div>
                     </div>
                 </div>
@@ -557,16 +578,16 @@
 
         <img src="images/swimming-fish/fishy-15.svg" id="fish3">
         <img src="images/website-decor/diver.svg" class="diver">
-        <section class="section-padding" id="contributors">
+        <section class="section-padding text-center" id="contributors">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
                         <div class="page-title">
                             <h2>Sponsors</h2>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row justify-content-center">
                     <!--sponsors-and-partners start-->
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="box">
@@ -601,20 +622,28 @@
                         </div>
                     </div>
                     <!--sponsors-and-partners end-->
+                    <div class="row justify-content-center">
+                        <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                            <p>Interested in becoming a sponsor? Reach out to us at <a href="mailto:outreach@vhhacks.ca">outreach@vhhacks.ca</a>,
+                                or check out our
+                                <a href="vhh-sp.pdf">sponsorship pack.</a>
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                    <p>Interested in becoming a sponsor? Reach out to us at <a href="mailto:outreach@vhhacks.ca">outreach@vhhacks.ca</a>,
-                        or check out our
-                        <a href="vhh-sp.pdf">sponsorship pack.</a>
-                    </p>
-                </div>
+
             </div>
         </section>
+        <div class="container text-center">
+
+        </div>
+
 
         <img src="images/swimming-fish/fishy-14.svg" id="fish4">
         <section class="section-padding" id="partners">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
                         <div class="page-title">
                             <h2>Community Partners</h2>
@@ -622,7 +651,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row justify-content-center">
                     <!--partner start-->
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="box">
@@ -642,12 +671,8 @@
                     </div>
                     <!--partner end-->
                 </div>
-            </div>
-        </section>
-
-        <section class="section-padding" id="contact">
-            <div class="container">
-                <div class="row">
+                <br>
+                <div class="row justify-content-center">
                     <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
                         <div class="page-title">
                             <h2>Get in touch with us.</h2>
@@ -660,12 +685,21 @@
             </div>
         </section>
 
+        <section class="section-padding" id="contact">
+            <div class="container">
+
+            </div>
+        </section>
+
         <section class="social-section text-center">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
                     <a href="https://www.instagram.com/vhhacks/" target="_blank"><i class="sicon ti-instagram"></i></a>
                     <a href="https://www.facebook.com/events/432399567627158/" target="_blank"><i
                             class="sicon ti-facebook"></i></a>
+                </div>
+                <div class="row justify-content-center py-5">
+                    <a href="newsletter.html" class="button white">Sign up for our newsletter</a>
                 </div>
             </div>
         </section>
@@ -675,10 +709,9 @@
             <img src="images/website-decor/angler.svg" id="angler">
             <div class="footer-txt">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 text-center">
-                            <p>Made with <i class="ti-heart" aria-hidden="true"></i> <br>Built with Colid
-                                by <a href="https://colorlib.com">Colorlib</a></p>
+                    <div class="row justify-content-center">
+                        <div class="container text-center">
+                            <img src="images/logos/vhhacksclear.png" style="width: 200px;">
                         </div>
                     </div>
                 </div>
@@ -3739,8 +3772,13 @@
 
 
     <!--Vendor-JS-->
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+        crossorigin="anonymous"></script>
     <!--Plugin-JS-->
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/contact-form.js"></script>
