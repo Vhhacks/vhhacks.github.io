@@ -261,6 +261,22 @@ a:active {
     transform: rotate(180deg);
 }
 
+@media screen and (max-width: 1400px) {
+    .mobile-unfriendly {
+        display: none;
+    !important;
+    }
+
+    .mobile-friendly {
+        display: block;
+    !important;
+    }
+
+    .mobile-friendly-col {
+        display: flex; !important;
+    }
+}
+
 .email-link{
     font-size: 25px;
 }

@@ -31,11 +31,26 @@ function closeBanner(){
     // .classList.remove("warningShown")
 }
 
+function openBanner(){
+    anime({
+        targets: '.navbar',
+        translateY: 0.05 * $(window).height(),
+        easing: 'easeInOutExpo'
+    });
+    // .classList.remove("warningShown")
+}
+
 window.onresize = function(event) {
     correctElements()
 };
 
 function correctElements(){
+
+    if($(window).width() < 1400){
+        closeBanner()
+    }else{
+        openBanner()
+    }
 
     if($(window).width()/1.5 > $(window).height()){
         console.log("thick");
@@ -46,6 +61,8 @@ function correctElements(){
         document.getElementById("background").classList.remove("thick")
         document.getElementById("background").classList.add("thin")
     }
+
+
 }
 
 $('.panel-collapse').on('show.bs.collapse', function () {
