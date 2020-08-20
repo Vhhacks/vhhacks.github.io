@@ -20,7 +20,16 @@ $(document).ready(function () {
         translateY: 0.05 * $(window).height()
     });
     correctElements()
+
+
 });
+
+$('#iframe').ready(function () {
+    $(".freebirdFormviewerViewNavigationPasswordWarning").style.color = "white"
+    $(".freebirdFormviewerViewNavigationPasswordWarning").style.color = "white"
+    $(".freebirdFormviewerViewNavigationPasswordWarning").style.color = "white"
+})
+
 
 function closeBanner(){
     anime({
