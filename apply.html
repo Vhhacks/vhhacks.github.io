@@ -63,13 +63,13 @@
         </a>
     </div>
     <img src="images/website-decor/diver.svg" class="diver px-5 mobile-unfriendly" style="left: 4vw; position: absolute">
-    <div class="container px-5">
+    <div class="container text-center px-5">
         <div class="text-center py-5">
             <a href="https://forms.gle/DjfrADjYh7rEjd3J7" class="button-white">Not looking right? Click to the Mobile Version</a>
         </div>
-        <script src="js/restyler.js"
-                form="https://docs.google.com/forms/d/e/1FAIpQLScDchFeaylQkTSpcw5eDQOdrRmDr0XHLLqN_nh7u3ii9WknCQ/viewform?embedded=true">
-        </script>
+        <div style="background: rgba(255,255,255,0.5); display:inline-block; border-radius: 20px; padding: 20px 0px">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDchFeaylQkTSpcw5eDQOdrRmDr0XHLLqN_nh7u3ii9WknCQ/viewform?embedded=true" width="640" height="3450" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
 
     </div>
     <footer class="footer-area relative" id="contact-page">
@@ -104,6 +104,13 @@
 <script src="js/particles.js"></script>
 <script src="js/app.js"></script>
 <!--<script src="js/daynight.js"></script>-->
+<script>
+    $(document).ready(function(){
+        if($(window).width() < 800){
+            window.location.href = "https://forms.gle/h9K7BRuJ8okZ6tKT8";
+        }
+    })
+</script>
 </body>
 
 </html>
