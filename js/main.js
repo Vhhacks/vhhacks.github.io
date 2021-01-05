@@ -16,9 +16,9 @@ $('#main-button').hover(function () {
 
 $(document).ready(function () {
     console.log(0.05 * $(window).height());
-    anime.set('.navbar',{
-        translateY: 0.05 * $(window).height()
-    });
+//    anime.set('.navbar',{
+//        translateY: 0.05 * $(window).height()
+//    });
     correctElements()
 
 
@@ -54,13 +54,7 @@ window.onresize = function(event) {
 };
 
 function correctElements(){
-
-    if($(window).width() < 1400){
-        closeBanner()
-    }else{
-        openBanner()
-    }
-
+    
     if($(window).width()/1.5 > $(window).height()){
         console.log("thick");
         document.getElementById("background").classList.add("thick")
